@@ -1,5 +1,28 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'NanumSquareB'; /* 폰트 이름 */
+    src: url('../font/NanumSquareB.ttf') format('truetype'); /* 폰트 파일의 상대 경로와 형식 */
+}
+@font-face {
+    font-family: 'NanumSquareL'; /* 폰트 이름 */
+    src: url('../font/NanumSquareL.ttf') format('truetype'); /* 폰트 파일의 상대 경로와 형식 */
+}
+@font-face {
+    font-family: 'NanumSquareR'; /* 폰트 이름 */
+    src: url('../font/NanumSquareR.ttf') format('truetype'); /* 폰트 파일의 상대 경로와 형식 */
+}
+
+h1,h2,h3,h4,.btnWrap button, .tableWidth td, .marginTop td{
+    font-family: 'NanumSquareL', sans-serif;
+}
+select,.concrete, .searchBottom th{
+    font-family: 'NanumSquareB', sans-serif;
+}
+.btn3 button, .menuLogo p, .search input, .searchBottom td, .login a{
+    font-family: 'NanumSquareR', sans-serif;
+}
+
 #wrap{
     width: 100%;
     height: 100vh;
@@ -374,6 +397,7 @@ padding-bottom: 12px;
 .footer{
     background-color: #fbfbfb;
     padding-top: 59px;
+    font-family: 'NanumSquareR', sans-serif;
 }
 .information{
     padding-top: 50px;
