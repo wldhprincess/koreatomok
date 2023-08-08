@@ -165,7 +165,7 @@ main{
     width: 100%;
 }
 .borderBottom{
-    border-bottom: 1px solid #898989;
+    border-bottom: 1px solid #c9c9c9;
 }
 .bestProduct{
     margin-bottom: 106PX;
@@ -268,6 +268,7 @@ h4{
     border: 1px solid #c9caca;
     background: #fff;
     color: #898989;
+    font-size: 17px;
 }
 .concrete{
     font-size: 24px;
@@ -385,6 +386,7 @@ padding-bottom: 12px;
 .informationTop{
     font-size: 17px;
     padding-bottom: 36px;
+    color: #163043;
 }
 .informationTop span{
     padding-right: 3px
@@ -399,9 +401,14 @@ padding-bottom: 12px;
 .information table td{
     padding-right: 20px;
     padding-bottom: 10px;
+    color: #163043;
+}
+.information table a{
+    color: #163043;
 }
 .hours{
     display: flex;
+    color: #163043;
 }
 .hoursRight button{
     display: block;
@@ -425,7 +432,7 @@ padding-bottom: 12px;
     width: 473px;
     height: 286px;
     border-radius: 5px;
-    border: 1px solid #898989;
+    border: 1px solid #c9c9c9;
     position: absolute;
 }
 .footerBtm{
@@ -437,7 +444,12 @@ padding-bottom: 12px;
 cite{
     font-size: 17px;
     font-weight: bold;
+    color: #163043;
 }
 address{
+    color: #163043;
     font-size: 15px;
+}
+address a{
+    color: #163043;
 }
