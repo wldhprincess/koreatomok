@@ -370,3 +370,74 @@ color: #000;
 font-weight: bold;
 padding-bottom: 12px;
 }
+.footer{
+    background-color: #fbfbfb;
+    padding-top: 59px;
+}
+.information{
+    padding-top: 50px;
+}
+.informationBox{
+    display: flex;
+    gap: 23px;
+    padding-bottom: 56px;
+}
+.informationTop{
+    font-size: 17px;
+    padding-bottom: 36px;
+}
+.informationTop span{
+    padding-right: 3px
+}
+.informationTop span img{
+    position: relative;
+    top: -4px;
+}
+.information table,p{
+    font-size: 15px;
+}
+.information table td{
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.hours{
+    display: flex;
+}
+.hoursRight button{
+    display: block;
+    margin-left: 20px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+    background: #898989;
+    color: #fff;
+}
+.information p{
+    padding-top: 3px;
+}
+.hoursRight  .btnColor{
+    background: #004ea2;
+}
+
+#map {
+    width: 473px;
+    height: 286px;
+    border-radius: 5px;
+    border: 1px solid #898989;
+    position: absolute;
+}
+.footerBtm{
+    background: #fff;
+    padding-top: 56px;
+    line-height: 26px;
+    padding-bottom: 56px;
+}
+cite{
+    font-size: 17px;
+    font-weight: bold;
+}
+address{
+    font-size: 15px;
+}

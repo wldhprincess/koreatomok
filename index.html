@@ -6,12 +6,6 @@
     <title>코리아토목 사용자</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        #map {
-            width: 500px;
-            height: 400px;
-        }
-    </style>
 </head>
 <body>
     <div id="wrap">
@@ -865,119 +859,126 @@
                             고객센터
                         </div>
                     </div>
-                    <div class="information">
-                        <div class="informationTop">
-                            <span>
-                                <img src="./img/li.png" alt="">
-                            </span>
-                            근무시간
+                    <div class="informationBox">
+                        <div class="information">
+                            <div class="informationTop">
+                                <span>
+                                    <img src="./img/li.png" alt="">
+                                </span>
+                                근무시간
+                            </div>
+                            <div class="hours">
+                                <div class="hoursLeft">
+                                    <table>
+                                        <tr>
+                                            <td>평일</td>
+                                            <td>09:00 ~ 18:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>점심</td>
+                                            <td>12:00 ~ 13:00</td>
+                                        </tr>
+                                    </table>
+                                    <p>주말, 일요일, 공휴일은 휴무입니다.</p>
+                                </div>
+                                <div class="hoursRight">
+                                    <button type="button" class="btnColor">채팅상담</button>
+                                    <button type="button">제휴문의</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="hours">
-                            <div class="hoursLeft">
+                        <div class="information">
+                            <div class="informationTop">
+                                <span>
+                                    <img src="./img/li.png" alt="">
+                                </span>
+                                공지사항
+                            </div>
+                            <div class="announcement">
                                 <table>
                                     <tr>
-                                        <td>평일</td>
-                                        <td>09:00 ~ 18:00</td>
+                                        <td>2023.12.31</td>
+                                        <td><a href="">원자재값 인상으로 품목별 <!-- ~~ --></a></td>
                                     </tr>
                                     <tr>
-                                        <td>점심</td>
-                                        <td>12:00 ~ 13:00</td>
+                                        <td>2023.11.10</td>
+                                        <td><a href="">THP고강도 파일의 단가변동</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023.09.30</td>
+                                        <td><a href="">홈페이지 개편완료</a></td>
                                     </tr>
                                 </table>
-                                <p>주말, 일요일, 공휴일은 휴무입니다.</p>
-                            </div>
-                            <div class="hoursRight">
-                                <button type="button">채팅상담</button>
-                                <button type="button">제휴문의</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="information">
-                        <div class="informationTop">
-                            <span>
-                                <img src="./img/li.png" alt="">
-                            </span>
-                            공지사항
+                        <div class="information">
+                            <div class="informationTop">
+                                <span>
+                                    <img src="./img/li.png" alt="">
+                                </span>
+                                은행정보
+                            </div>
+                            <div class="bank">
+                                <table>
+                                    <tr>
+                                        <td>예금주</td>
+                                        <td><a href="">(주)코리아토목</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>거래은행</td>
+                                        <td><a href="">기업은행</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>계좌번호</td>
+                                        <td><a href="">031-297-980</a></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                        <div class="announcement">
-                            <table>
-                                <tr>
-                                    <td>2023.12.31</td>
-                                    <td><a href="">원자재값 인상으로 품목별 ~~</a></td>
-                                </tr>
-                                <tr>
-                                    <td>2023.11.10</td>
-                                    <td><a href="">THP고강도 파일의 단가변동</a></td>
-                                </tr>
-                                <tr>
-                                    <td>2023.09.30</td>
-                                    <td><a href="">홈페이지 개편완료</a></td>
-                                </tr>
-                            </table>
+                        <div class="information">
+                            <div class="informationTop">
+                                <span>
+                                    <img src="./img/li.png" alt="">
+                                </span>
+                                찾아오시는 길
+                            </div>
+                            <div id="map"></div>
+                            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3e207aa5e93734278f09da0ada22509e"></script>
+                            <script>
+                                // 카카오맵 API를 불러온 후 실행될 콜백 함수
+                                kakao.maps.load(function () {
+                                // 지도를 표시할 div의 id를 가져옴
+                                var container = document.getElementById('map');
+                            
+                                // 지도를 생성하는데 필요한 기본 옵션 설정
+                                var options = {
+                                    center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심 좌표 (위도, 경도)
+                                    level: 3 // 지도의 확대 레벨 (1부터 14까지 가능)
+                                };
+                            
+                                // 지도를 생성
+                                var map = new kakao.maps.Map(container, options);
+                            
+                                // 지도에 마커를 표시하는 예시 (선택 사항)
+                                var markerPosition = new kakao.maps.LatLng(37.566826, 126.9786567);
+                                var marker = new kakao.maps.Marker({
+                                    position: markerPosition
+                                });
+                                marker.setMap(map);
+                                });
+                            </script>
                         </div>
-                    </div>
-                    <div class="information">
-                        <div class="informationTop">
-                            <span>
-                                <img src="./img/li.png" alt="">
-                            </span>
-                            은행정보
-                        </div>
-                        <div class="bank">
-                            <table>
-                                <tr>
-                                    <td>예금주</td>
-                                    <td><a href="">(주)코리아토목</a></td>
-                                </tr>
-                                <tr>
-                                    <td>거래은행</td>
-                                    <td><a href="">기업은행</a></td>
-                                </tr>
-                                <tr>
-                                    <td>계좌번호</td>
-                                    <td><a href="">031-297-980</a></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="information">
-                        <div class="informationTop">
-                            <span>
-                                <img src="./img/li.png" alt="">
-                            </span>
-                            찾아오시는 길
-                        </div>
-                        <div id="map"></div>
-                        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3e207aa5e93734278f09da0ada22509e"></script>
-                        <script>
-                            // 카카오맵 API를 불러온 후 실행될 콜백 함수
-                            kakao.maps.load(function () {
-                              // 지도를 표시할 div의 id를 가져옴
-                              var container = document.getElementById('map');
-                        
-                              // 지도를 생성하는데 필요한 기본 옵션 설정
-                              var options = {
-                                center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심 좌표 (위도, 경도)
-                                level: 3 // 지도의 확대 레벨 (1부터 14까지 가능)
-                              };
-                        
-                              // 지도를 생성
-                              var map = new kakao.maps.Map(container, options);
-                        
-                              // 지도에 마커를 표시하는 예시 (선택 사항)
-                              var markerPosition = new kakao.maps.LatLng(37.566826, 126.9786567);
-                              var marker = new kakao.maps.Marker({
-                                position: markerPosition
-                              });
-                              marker.setMap(map);
-                            });
-                          </script>
                     </div>
                 </div>
             </div>
             <div class="footerBtm">
                 <div class="innerWrap">
-                    
+                    <div class="addr">
+                        <cite>(주)코리아토목</cite>
+                        <address>대표 : 이재혁 / 경기도 수원시 권선구 서수원로 63번길 181 / 전화 : <a href="tel:031-297-9800">031-297-9800</a></address>
+                        <address>사업자등록번호 : 124-87-00160 [사업자정보확인] / 통신판매업신고 : 제 수원권선-0140 호</address>
+                        <address>개인정보관리책임자 : 김교정 / 이메일 : <a href="">2979802@naver.com</a> 코리아토목-토목자재도매단가쇼핑몰.All rights reserved.</address>
+                    </div>
                 </div>
             </div>
         </footer>
