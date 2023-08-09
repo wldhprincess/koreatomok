@@ -12,15 +12,48 @@
     font-family: 'NanumSquareR'; /* 폰트 이름 */
     src: url('../font/NanumSquareR.ttf') format('truetype'); /* 폰트 파일의 상대 경로와 형식 */
 }
+@font-face {
+    font-family: 'NanumSquareEB'; /* 폰트 이름 */
+    src: url('../font/NanumSquareEB.otf') format('truetype'); /* 폰트 파일의 상대 경로와 형식 */
+}
 
-h1,h2,h3,h4,.btnWrap button, .tableWidth td, .marginTop td{
+h1,h2, .marginTop td{
     font-family: 'NanumSquareL', sans-serif;
 }
-select,.concrete, .searchBottom th{
+select,.concrete, h5, h3, .searchBottom th{
     font-family: 'NanumSquareB', sans-serif;
 }
-.btn3 button, .menuLogo p, .search input, .searchBottom td, .login a{
+.btn3 button,h4, h6, .menuLogo p, aside, .search input, .searchBottom td, .login a, .tableWidth td{
     font-family: 'NanumSquareR', sans-serif;
+}
+.btnWrap button {
+    font-family: 'NanumSquareEB', sans-serif;
+}
+
+.marginRight{
+    font-weight: bold;
+}
+
+.fontUp .marginTop{
+    font-size: 0.938em;
+}
+
+.gradationborder{
+    letter-spacing: -1px;
+}
+
+.bigFont.fontDown9{
+    width: 202px;
+    font-size: 0.95em;
+    letter-spacing: -1.5px;
+}
+.bigFont.fontDown3{
+    width: 209px;
+    font-size: 1.2em;
+}
+.bigFont.fontDown4{
+    width: 202px;
+    font-size: 1.16em;
 }
 
 #wrap{
@@ -65,7 +98,7 @@ select,.concrete, .searchBottom th{
     outline: none;
     color: #a2c1e3;
     padding-left: 30px;
-    font-size: 17px;
+    font-size: 1.063em;
     font-weight: bold;
 }
 .header .search form input:focus{
@@ -87,14 +120,16 @@ select,.concrete, .searchBottom th{
     text-indent: -9999px;
 }
 .header .search table{
-    font-size: 13px;
+    font-size: 0.813em;
     margin-top: 10px;
     margin-left: 30px;
 }
-.header .search td{padding-left: 12px;
+.header .search td{
+    padding-left: 12px;
+    letter-spacing: -.2px;
 }
 .header .login{
-    font-size: 13px;
+    font-size: 0.813em;
 }
 
 .header .login a{
@@ -103,7 +138,7 @@ select,.concrete, .searchBottom th{
     padding: 0 10px;
     border-right: 1px solid #000;
 }
-.header .login a:nth-child(3){
+.header .login a:last-child{
     border-right: none;
 }
 
@@ -118,7 +153,7 @@ select,.concrete, .searchBottom th{
     position: relative;
     display: flex;
     align-items: end;
-    top: 25px;
+    top: -40px;
 }
 .menu .menuLogo button{
     background: url(../img/menu.png) no-repeat;
@@ -128,40 +163,43 @@ select,.concrete, .searchBottom th{
     text-indent: -99999px;
 }
 .menu .menuLogo p{
-    font-size: 13px;
+    font-size: 0.813em;
     padding-left: 12px;
     font-weight: bold;
 }
 .menu h1{
     position: absolute;
-    top: 70px;
-    font-size: 36px;
+    top: 35%;
+    font-size: 2.250em;
     left: 50%;
     transform: translateX(-50%);
     display: inline-block;
+    letter-spacing: -1px;
 }
 .menu h1 span{
     color: #004ea2;
     font-weight: bold;
 }
 .menu h2{
-    font-size: 16px;
+    font-size: 1em;
     color: #898989;
     position: absolute;
-    top: 118px;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
+    letter-spacing: -1px;
 } 
 .depth{
     display: flex;
     justify-content: center;
+   /*  display: none; */
 }
 .depth select{
     width: 330px;
     height: 64px;
-    font-size: 15px;
+    font-size: 1.000em;
     border-radius: 10px;
-    margin: 182px 2px 0;
+    margin: 54px 2px 0;
     padding-left: 30px;
     border: 1px solid #c9caca;
     background: url(../img/moreButton2.png) no-repeat 95% 50%;
@@ -169,7 +207,7 @@ select,.concrete, .searchBottom th{
     -moz-appearance: none;
     appearance: none;
     color: #898989;
-    
+    letter-spacing: -1px;
     font-weight: bold;
 }
 .depth select:nth-child(1){
@@ -180,15 +218,18 @@ select,.concrete, .searchBottom th{
     -moz-appearance: none;
     appearance: none;
 }
+.depth select:last-child{
+    margin-right: 0;
+}
 .depth select:nth-child(1):focus{
     outline: none;
 }
 main{
-    padding-top: 68px;
     width: 100%;
 }
 .borderBottom{
     border-bottom: 1px solid #c9c9c9;
+    padding-top: 70px;
 }
 .bestProduct{
     margin-bottom: 106PX;
@@ -200,46 +241,70 @@ main{
 }
 .bestProductName{
     text-align: start;
-    font-size: 20px;
+    font-size: 1.250em;
     position: relative;
     padding-bottom: 12px;
+    letter-spacing: -3px;
+    font-weight: bold;
 }
 .bestProductName span{
-    padding-right: 8px;
+    padding-right: 7px;
 }
 
+.bestPrdWidth{
+    margin-bottom: 36px;
+}
 .imgBox{
-    background: url(../img/product1.png) no-repeat center bottom;
+    /* background: url(../img/img1.png) no-repeat center bottom; */
     width: 325px;
     height: 270px;
-    padding: 36px 33px 0;
+    padding: 36px 0 0;
 }
 .tableWidth{
     width: 325px;
+    margin-top: 15px;
 }
 .bigFont{
-    font-size: 22px;
-    border-bottom: 3px solid #004ea2;
+    position: relative;
+    font-size: 1.375em;/* 
+    border-bottom: 3px solid #004ea2; */
     width: 180px;
     padding-bottom: 13px;
 }
+.borderBlue{
+    width: 180px;
+    height: 3px;
+    background: #004ea2;
+    position: relative;
+    bottom: -14.5px;
+}
+/* .bigFont::before{
+    width: 180px;
+    content: '';
+    position: absolute;
+    top: 34px;
+    border-bottom: 3px solid #004ea2;
+    z-index: -3;
+} */
 .bigFont2{
-    font-size: 20px;
+    font-size: 1.250em;
     text-align: right;
     color: #898989;/* 
     border-bottom: 1px solid #c9caca; */
     position: relative;
 }
 .border{
-    width: 100%;
+    width: 148px;
     height: 1px;
     background: #c9caca;
     position: absolute;
     bottom: -1.5px;
+    right: 0;
+    z-index: -2;
 }
 .marginTop{
     margin-top: 15px;
-    font-size: 13px;
+    font-size: 0.813em;
     color: #898989;
 }
 .marginRight{
@@ -254,7 +319,7 @@ main{
     height: 31px;
     border: none;
     color: #f7f7f7;
-    font-size: 13px;
+    font-size: 0.813em;
 }
 .gray{
     margin-right: 2px;
@@ -265,16 +330,96 @@ main{
     background: #000;
 }
 
-.productTop{
-    text-align: center;
-    padding-bottom: 70px;
+.productBanner{
+    width: 100%;
+    height: 113px;
+    position: relative;
+}
+.BannerL{
+    width: 1126px;
+    height: 100%;
+    background: #004ea2;
+    background:linear-gradient(-61deg, transparent 79px, #004ea2 0);
+    position: absolute;
+    left: 0;
 }
 h3{
-    font-size: 29px;
+    font-size: 1.813em;
+    color: #fff;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+}
+h3 span{
+    color: #d8ebff;
+}
+h4{
+    font-size: 0.938em;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: -.5px;
+}
+.bannerLtxt{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+.btnWrap{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+}
+.btnWrap button{
+    width: 120.64px;
+    height: 34px;
+    border-radius: 17px;
+    border: none;
+    background: #fff;
+    color: #004ea2;
+    font-size: 0.938em;
+}
+.btnWrap button:first-child{
+    background: #737373;
+    color: #fff;
+}
+.BannerR{
+    width: 385px;
+    height: 100%;
+    background: #737373;
+    background:linear-gradient(119deg, transparent 79px, #737373 0);
+    position: absolute;
+    right: 0;
+}
+.bannerRtxt{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    color: #fff;
+}
+h5{
+    font-size: 1.563em;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+h6{
+    font-size: 0.813em;
+    letter-spacing: -.5px;
+    font-weight: bold;
+}
+
+
+/* .productTop{
+    text-align: center;
+
+}
+h3{
+    font-size: 1.813em;
     padding-bottom: 9px;
 }
 h4{
-    font-size: 17px;
+    font-size: 1.063em;
     color: #898989;
     padding-bottom: 34px;
 }
@@ -291,19 +436,28 @@ h4{
     border: 1px solid #c9caca;
     background: #fff;
     color: #898989;
-    font-size: 17px;
+    font-size: 1.063em;
 }
+.btnWrap button:hover{
+    background: #004ea2;
+    color: #fff;
+} */
 .concrete{
-    font-size: 24px;
+    font-size: 1.500em;
     color: #004ea2;
     font-weight: bold;
     padding-bottom: 9px;
+    letter-spacing: -1px;
+}
+.concrete span{
+    margin-right: 7px;
 }
 aside{
     width: 325PX;
     /* margin-right: 34px; */
     margin-top: 39px;
-    font-size: 16px;
+    font-size: 1.000em;
+    letter-spacing: -2px;
 }
 .productBoxW{
     display: flex;
@@ -381,22 +535,23 @@ aside{
     border-right: 1px solid; */
 
     .concreteMg{
-        margin-top: 102px;
+        margin-top: 20px;
     }
 
 .productBtm{
-    padding-bottom: 115px;
+    padding-bottom: 79px;
 }
-
+.bestProduct{
+    margin-bottom:70px;
+}
 .service{
-font-size: 20px;
+font-size: 1.250em;
 color: #000;
 font-weight: bold;
 padding-bottom: 12px;
 }
 .footer{
     background-color: #fbfbfb;
-    padding-top: 59px;
     font-family: 'NanumSquareR', sans-serif;
 }
 .information{
@@ -404,11 +559,13 @@ padding-bottom: 12px;
 }
 .informationBox{
     display: flex;
-    gap: 23px;
+    gap: 58px;
     padding-bottom: 56px;
+    letter-spacing: -1px;
+    font-weight: bold;
 }
 .informationTop{
-    font-size: 17px;
+    font-size: 1.063em;
     padding-bottom: 36px;
     color: #163043;
 }
@@ -420,7 +577,7 @@ padding-bottom: 12px;
     top: -4px;
 }
 .information table,p{
-    font-size: 15px;
+    font-size: 0.938em;
 }
 .information table td{
     padding-right: 20px;
@@ -441,7 +598,7 @@ padding-bottom: 12px;
     height: 30px;
     border: none;
     margin-bottom: 6px;
-    font-size: 14px;
+    font-size: 0.875em;
     background: #898989;
     color: #fff;
 }
@@ -465,15 +622,29 @@ padding-bottom: 12px;
     line-height: 26px;
     padding-bottom: 56px;
 }
+.addr{
+    letter-spacing: -.2px;
+    font-weight: bold;
+}
 cite{
-    font-size: 17px;
+    font-size: 1.063em;
     font-weight: bold;
     color: #163043;
 }
 address{
     color: #163043;
-    font-size: 15px;
+    font-size: 0.938em;
+
 }
 address a{
     color: #163043;
+}
+.active{
+    background: #004ea2;
+    color: #fff;
+}
+
+.two-lines {
+    font-size: 0.875em;
+    width: 200px;
 }
