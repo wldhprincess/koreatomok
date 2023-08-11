@@ -1,6 +1,6 @@
 $(function() {
 
-    let optionarea0 = ["1단계-품목의 소재를 선택해 주세요","철근콘크리트","콘크리트","스틸","석재","PE/PVC","기타"],
+    /* let optionarea0 = ["1단계-품목의 소재를 선택해 주세요","철근콘크리트","콘크리트","스틸","석재","PE/PVC","기타"],
         optionarea1 = ["2단계-품목을 선택해 주세요",'암거','플륨관/수로관','측구수로관','사각수로관','원심력사각수로관','흄관/레진관','VR관','PC방호벽','PHC파일','옹벽블록'],
         optionarea2 = ["2단계-품목을 선택해 주세요",'맨홀','인터로킹(보도블록)','점토블록','식생축조블록','보강토블록','콘크리트 경계석','호안블록','잔디블록','콘크리트벽돌','가로등 기초','가로수보호판','빗물받이 블록','PC트렌치','레디락블록'],
         optionarea3 = ["2단계-품목을 선택해 주세요",'주철뚜껑','무소음트렌치','그레이팅','중하중그레이팅','디자인그레이팅','SUS그레이팅','파형강관'],
@@ -8,16 +8,17 @@ $(function() {
         optionarea5 = ["2단계-품목을 선택해 주세요",'PE이중벽관','PE다중벽관','고강성PVC이중벽관','PE/PY','THP관','PVC관','HDPE관','카스토퍼','그레이팅덮개','플라스틱 그레이팅','몰탈용 고무시트','PE사다리'],
         optionarea6 = ["2단계-품목을 선택해 주세요",'플륨관/수로관집게','수밀밴드(A형 흄관용)','축조블록집게','보강토집게','경계석집게','고정클립','부직포'];
 
-    let optionarea7 = ["3단계-세부 품목을 선택해 주세요",'1련암거','2련암거','상하분리 1련암거','상하분리 2련암거 ','개거암거'],
-        optionarea8 = ["3단계-세부 품목을 선택해 주세요",'U형 플륨관(벤치 1종)','벤치 플륨관(벤치 2종)','수로관(벤치 3종)','환경수로관','개거수로관','보강수로관(무개)','건널목수로관(1종)','건널목수로관(2종)'],
-        optionarea9 = ["3단계-세부 품목을 선택해 주세요",'측구수로관A형(앵글미부착)','측구수로관 B형(앵글부착)','측구수로관 AN형(앵글부착)','측구수로관 Z형(앵글부착)','침투측구수로관유공(앵글부착)','침투측구수로관(앵글부착)'],
-        optionarea10 = ["3단계-세부 품목을 선택해 주세요",'원형사각수로관(RDG형)','돌무늬원형사각수로관 NS-02','돌무늬원형사각수로관 NS-03','NS용 집수정(사각수로관용)','사각수로관(AN형)','사각수로관(BN형)','사각수로관(CN형)','사각수로관(DN형)'],
-        optionarea11 = ["3단계-세부 품목을 선택해 주세요",'원심력사각수로관(무개)','원심력사각수로관(유개)'],
-        optionarea12 = ["3단계-세부 품목을 선택해 주세요",'흄관 B형','흄관 A형','유공 흄관','접속 흄관','레진관'],
-        optionarea13 = ["3단계-세부 품목을 선택해 주세요",'VR관','PC방호벽','PHC파일','토탈옹벽블록','PC판넬옹벽'],
-        optionarea14 = ["3단계-세부 품목을 선택해 주세요",'사각맨홀','사각노바시','원형맨홀','원형노바시','침투집수정','전기맨홀','통신맨홀','조립식맨홀(상부, 연직, 하부구체)','조립식PC맨홀(전체높이)'],
-        optionarea15 = ["3단계-세부 품목을 선택해 주세요",'인터로킹 U형블록','인터로킹 12형 블록','인조화강블록(투수)','인조화강블록(불투수)','다칼라블랜딩블록(투수)','다칼라블랜딩블록(불투수)','장애인사각블럭(점자블록)','규사'],
-        optionarea16 = ["3단계-세부 품목을 선택해 주세요",'점토블록'],
+    // KCY 3depth option
+    let optionareaFor3depth1 = ["3단계-세부 품목을 선택해 주세요",'1련암거','2련암거','상하분리 1련암거','상하분리 2련암거 ','개거암거'],
+        optionareaFor3depth2 = ["3단계-세부 품목을 선택해 주세요",'U형 플륨관(벤치 1종)','벤치 플륨관(벤치 2종)','수로관(벤치 3종)','환경수로관','개거수로관','보강수로관(무개)','건널목수로관(1종)','건널목수로관(2종)'],
+        optionareaFor3depth3 = ["3단계-세부 품목을 선택해 주세요",'측구수로관A형(앵글미부착)','측구수로관 B형(앵글부착)','측구수로관 AN형(앵글부착)','측구수로관 Z형(앵글부착)','침투측구수로관유공(앵글부착)','침투측구수로관(앵글부착)'],
+        optionareaFor3depth4 = ["3단계-세부 품목을 선택해 주세요",'원형사각수로관(RDG형)','돌무늬원형사각수로관 NS-02','돌무늬원형사각수로관 NS-03','NS용 집수정(사각수로관용)','사각수로관(AN형)','사각수로관(BN형)','사각수로관(CN형)','사각수로관(DN형)'],
+        optionareaFor3depth5 = ["3단계-세부 품목을 선택해 주세요",'원심력사각수로관(무개)','원심력사각수로관(유개)'],
+        optionareaFor3depth6 = ["3단계-세부 품목을 선택해 주세요",'흄관 B형','흄관 A형','유공 흄관','접속 흄관','레진관'],
+        optionareaFor3depth7 = ["3단계-세부 품목을 선택해 주세요",'VR관','PC방호벽','PHC파일','토탈옹벽블록','PC판넬옹벽'],
+        optionareaFor3depth8 = ["3단계-세부 품목을 선택해 주세요",'사각맨홀','사각노바시','원형맨홀','원형노바시','침투집수정','전기맨홀','통신맨홀','조립식맨홀(상부, 연직, 하부구체)','조립식PC맨홀(전체높이)'],
+        optionareaFor3depth9 = ["3단계-세부 품목을 선택해 주세요",'인터로킹 U형블록','인터로킹 12형 블록','인조화강블록(투수)','인조화강블록(불투수)','다칼라블랜딩블록(투수)','다칼라블랜딩블록(불투수)','장애인사각블럭(점자블록)','규사'],
+        optionareaFor3depth10 = ["3단계-세부 품목을 선택해 주세요",'점토블록'],
         optionarea17 = ["3단계-세부 품목을 선택해 주세요",'축조블록-곡선형','축조블록(평면용)','축조블록(평면칼라)'],
         optionarea18 = ["3단계-세부 품목을 선택해 주세요",'보강토블록 - 줄무늬','보강토블록 - 민무늬','보강토 마감형 -줄무늬','보강토 마감형 - 민무늬','그리드'],
         optionarea19 = ["3단계-세부 품목을 선택해 주세요",'콘크리트 경계석','녹지 경계블록','인조화강 경계석'],
@@ -55,13 +56,13 @@ $(function() {
         $("select[name^=1depth]").each(function() {
             $1depth = $(this);
             $.each(eval(optionarea0), function() {
-                $1depth.append("<option value='" + this + "'>" + this + "</option>");
+                $1depth.append("<option value='" + this + "'>" + this + "</option>"); //eval쓰면 안됨
             });
             $1depth.next().append("<option value=''>2단계-품목을 선택해 주세요</option>");
         });
     
         // 3단계 메뉴 초기화 후 처음 로드 시 "3단계-세부 품목을 선택해 주세요" 옵션 추가
-        $("select[name^=3depth]").append("<option value=''>3단계-세부 품목을 선택해 주세요</option>");
+        $("select[name^=3depth]").append("<option value=''>3단계-세부 품목을 선택해 주세요</option>"); //탈락 꼬일 가능성이 큼 dom
     
         $("select[name^=1depth]").change(function () {
             var area = "optionarea" + $("option", $(this)).index($("option:selected", $(this)));
@@ -77,20 +78,53 @@ $(function() {
                 $.each(eval(area), function () {
                     $2depth.append("<option value='" + this + "'>" + this + "</option>");
                 });
-        
-                // 3단계 옵션 추가
-                $.each(eval(area + "3"), function () {
-                    $3depth.append("<option value='" + this + "'>" + this + "</option>");
-                });
+
+                $3depth.append("<option value=''>3단계-세부 품목을 선택해 주세요</option>"); //KCY
             }
         });
 
+    //     하단 내용 추가 KCY
+    $("select[name^=2depth]").change(function () {
+        var area = "optionarea" + $("option", $(this)).index($("option:selected", $(this)));
+        var $3depth = $(this).next();
+        $("option", $3depth).remove();
+        var area3depth = "optionareaFor3depth" + $("option", $(this)).index($("option:selected", $(this)));
 
+        if (area == "optionarea0") {
+            $3depth.append("<option value=''>3단계-세부 품목을 선택해 주세요</option>");
+        } else {
+            $.each(eval(area3depth), function () {
+                $3depth.append("<option value='" + this + "'>" + this + "</option>");
+            });
+        }
+    });
+ */
 
+        
+    const bannerR = document.querySelector('.BannerR');
+    const bannerRhover = document.querySelector('.bannerRhover');
+    const bannerL = document.querySelector('.BannerL');
+    const btnWrap = document.querySelector('.btnWrap');
 
+    bannerR.addEventListener('mouseover', () => {
+        bannerL.style.width = '385px'; // 줄어든 넓이
+    });
 
+    bannerR.addEventListener('mouseout', () => {
+        bannerL.style.width = '1126px'; // 원래 넓이
+    });
 
-
+    let lastScroll = 0;
+    $(window).on('scroll', function(){
+        let scrollTop = $(this).scrollTop();
+        if(scrollTop > lastScroll) {
+            $('.scrollHeader').show();
+        } else {
+            $('.scrollHeader').hide();
+        }
+        lastScroll = scrollTop;
+    });
+    
 
 
     $(".btnWrap button").click(function() {
@@ -101,4 +135,65 @@ $(function() {
             scrollTop: targetElement.offset().top
         }, 800); 
     });
+
+    $('.menuNav').hide();
+
+    $('.menuLogo button').click(function(){
+        $('.menuNav').show();
+        $('.menuLogo').hide();
+    });
+
+    $('.menuNav').click(function(){
+        $('.menuNav').hide();
+        $('.menuLogo').show();
+    });
+
+/*     $('.list-member, .bar, borderBox').hide(); */
+    /* $('.list-memberShow, .showBar').show(); */
+
+   
+    
+
+    /* // A 목록이 열려있고 B목록을 클릭했을 경우
+    $('.btn-select').click(function() {
+        const parentArticle = $(this).closest('.cont-select');
+
+        // 몇번째 cont-select인지 구합니다.
+        const listMember = parentArticle.find('.list-member');
+        console.log(listMember.text());
+
+        const isListVisible = !(listMember.is(':visible'));
+        
+        // A 목록을 닫습니다.
+        $('.list-member:visible').each(function() {
+            // 클릭한 버튼과 검사하고자하는 버튼이 같지 않아야한다(같으면 B목록)
+            if ($(this).parent().index() != parentArticle.index()) {
+                // A 목록을 닫습니다.
+                $(this).slideUp();
+                
+                // A목록에 해당하는 .bar 요소를 토글하고 .btnHover 클래스를 조절합니다.
+                const otherBar = $(this).find('.bar');
+                otherBar.toggle(false);
+                $(this).parent().find('.btn-select').toggleClass('btnHover', false);
+            }
+        });
+    
+        // 클릭한 버튼에 해당하는 목록을 슬라이드로 열거나 닫습니다.
+        listMember.slideToggle();
+    
+        // 클릭한 버튼에 해당하는 .bar 요소를 토글하고 .btnHover 클래스를 조절합니다.
+        const bar = $(this).find('.bar');
+        bar.toggle(isListVisible);
+        $(this).toggleClass('btnHover', isListVisible);
+
+        console.log('완')
+    }); */
+
+
 });
+
+
+
+
+
+

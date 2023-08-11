@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+@import url(./style.css);
+@import url(./font.css);
+@import url(./layout.css);
+@import url(./all.css);
+
+.joinCheck label, .joinBtn button{
+    font-family: 'NanumSquareR', sans-serif;
+}
+.main .login , .memberselect button{
+    font-family: 'NanumSquareL', sans-serif;
+}
+.snsLogin button, .custom-checkbox-label button{
+    font-family: 'NanumSquareEB', sans-serif;
+}
+
+.main{
+    border-top: 1px solid #c9c9c9;
+}
+.main form{
+    width: 500px;
+    margin: 0 auto;
+}
+.main .login{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 51px;
+    font-size: 2.250em;
+}
+.membertab{
+    width: 100%;
+    height: inherit;
+}
+.memberselect{
+    width: 100%;
+    display: flex;
+    gap: 2px;
+    height: 50px;
+    margin-bottom: 42px;
+}
+.member{
+    width: 50%;
+}
+.buisnessmember{
+    width: 50%;
+}
+.memberselect button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0 ;
+    border: none;
+    font-size: 1.125em;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 8px;
+    color: #fff;
+    font-weight: bold;
+}
+.member button{
+    background: #004ea2;
+}
+.buisnessmember button{
+    background: #898989;
+}
+.snsLogin button{
+    height: 65px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    color: #fff;
+    font-size: 1.125em;
+}
+.snsLogin .kakao{
+    background: #ffdf00;
+    color: #000;
+}
+.naver{
+    background: #00c739;
+}
+.google{
+    background: #f85e6a;
+}
+.serviceCall{
+    display: block;
+    margin: 11px 0 14px;
+    color: #898989;
+}
+.underbar{
+    color: #898989;
+}
+.join{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 38px;
+}
+.joinCheck{
+    position: relative;
+    top: 7px;
+}
+.joinCheck label{
+    display: block;
+    cursor: pointer;
+}
+.joinCheck label{
+    font-size: 0.875em;
+    color: #898989;
+    margin-bottom: 16px;
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+}
+.custom-checkbox-label {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px; 
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.custom-checkbox-label input[type="checkbox"] {
+    display: none; 
+}
+
+.checkbox-image {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 20px; 
+    height: 20px; 
+    background-image: url('../img/checkbox.png'); 
+    background-size: contain; 
+
+}
+.custom-checkbox-label input[type="checkbox"]:checked + .checkbox-image {
+    background-image: url('../img/checked.png'); 
+}
+
+.joinCheck label button{
+    font-size: 0.750em;
+    width: 80px;
+    height: 21px;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: -4px;
+    background: #898989;
+    color: #fff;
+}
+.joinBtn button{
+    width: 200px;
+    height: 55px;
+    background: #898989;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+}
+
+.Copyright{
+    margin-bottom: 91px;
+    color: #898989;
+    font-family: Arial, Helvetica, sans-serif;
+}
