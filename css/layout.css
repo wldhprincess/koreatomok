@@ -104,6 +104,9 @@
     color: #fff;
     font-size: 1.250em;
 }
+.scrollNav ul li:hover a{
+    color: #d8ebff;
+}
 
 
 
@@ -168,6 +171,7 @@
     top: 0;
     background: rgba(0, 0, 0, .9);
     z-index: 26;
+    display: none;
 }
 .close{
     display: flex;
@@ -435,80 +439,54 @@ h4{
     transition: 1.5s ease-in-out;
     overflow: hidden;
 }
+.bannerButton{
+    display: flex;
+    gap: 6px;
+    left: 88px;
+    width: 706px;
+    position: absolute;
+    top: 59px;
+}
+.bannerButton button{
+    width: 120.64px;
+    height: 34px;
+    border-radius: 17px;
+    border: none;
+    background: #fff;
+    color: #004ea2;
+    font-size: 0.938em;
+}
 .BannerR:hover{
     width: 1126px;
     transition: all 1.5s ease-in-out;
 }
-
-.BannerR:hover .bannerRtxt{
-    display: none;
-}
-.BannerR:hover .bannerRhover{
-    display: block;
-}
-
-.BannerR:hover h5 + h6{
-    transition: 1.5s ease-in-out;
-}
-.btnWrap.BannerRbtn button:hover{
+.bannerButton button:hover{
     background: #004ea2;
     color: #fff;
 }
-.btnWrap.BannerRbtn{
-    display: flex;
-    gap: 6px;
-    left: 70px;
-}
-.BannerR:hover .BannerRbtn button{
-    display: block;
-}
-
-.BannerR:hover button{
-    width: 112.64px;
-}
 .bannerRtxt{
     position: absolute;
-    top: 50%;
+    top: 59%;
     transform: translateY(-50%);
-    right: 20px;
+    right: -15px;
     color: #fff;
-}
-.bannerRhover{
-    position: absolute;
-    display: none;
-    transition: all 1.5s ease-in-out;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.bannerRtxtHover{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 785px;
-    color: #fff;
-    width: 322px;
-}
-.bannerRtxtHover h5{
-    font-size: 1.813em;
-    padding-bottom: 10px;
-    letter-spacing: -1px;
-}
-.bannerRtxtHover h6{
-    font-size: 0.938em;
-    font-weight: bold;
-    letter-spacing: -.5px;
+    z-index: 22;
+    background: #737373;
+    height: 62px;
+    width: 330px;
 }
 h5{
     font-size: 1.563em;
     padding-bottom: 10px;
     letter-spacing: -1px;
+    padding-left: 15px;
 }
 h6{
     font-size: 0.813em;
     letter-spacing: -.5px;
     font-weight: bold;
+    
+    padding-left: 15px;
 }
 
 
@@ -557,10 +535,10 @@ h6{
     border: 3px solid #004ea2;
     padding-left: 28px;
     color: #004ea2;
-    background: url(../img/moreButton.png) no-repeat 92% 50%;
+    background: url(../img/moreButton.png) no-repeat 92.5% 50%;
     border-bottom: 0;
     border-radius: 10px 10px 0 0 ;
-    height: 60px;
+    height: 61px;
     top: 0;
 }
 .cont-select:hover .btn-select .bar{

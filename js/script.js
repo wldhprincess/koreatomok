@@ -135,9 +135,7 @@ $(function() {
             scrollTop: targetElement.offset().top
         }, 800); 
     });
-
-    $('.menuNav').hide();
-
+    
     $('.menuLogo button').click(function(){
         $('.menuNav').show();
         $('.menuLogo').hide();

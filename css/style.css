@@ -13,7 +13,7 @@ select,.concrete, h5, h3, .scrollNav ul li a {
 h4, h6, .menuLogo .innerWrap > a, aside, .search input, .searchBottom td, .login a, .tableWidth td, .searchBottom th, .header .search td, .btn-select,.DepthPdName a ,.DepthPd p, .list-member button{
     font-family: 'NanumSquareR', sans-serif;
 }
-.btnWrap button, .snsLogin button {
+.btnWrap button, .snsLogin button, .bannerButton button {
     font-family: 'NanumSquareEB', sans-serif;
 }
 
