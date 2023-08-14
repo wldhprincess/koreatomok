@@ -10,7 +10,7 @@
 .main .login span, .buisnessLog h3{
     font-family: 'NanumSquareEB', sans-serif;
 }
-label .absolute, .arrowBtn a, .nextBtn a, .information p{
+label .absolute, .arrowBtn a, .nextBtn a, .buisnessinfor p{
     font-family: 'NanumSquareR', sans-serif;
 }
 
@@ -32,10 +32,10 @@ label .absolute, .arrowBtn a, .nextBtn a, .information p{
     font-size: 1.188em;
     margin-bottom: 40px;
 }
-.information{
+.buisnessinfor{
     display: flex;
 }
-.information p {
+.buisnessinfor p {
     font-size: 0.875em;
     padding-top: 6px;
     padding-left: 15px;
@@ -121,3 +121,44 @@ label button.btnW.btnBack{
 }
 
 
+
+
+
+
+
+.completeWrap{
+    display: none;
+}
+.complete{
+    padding-top: 40px;
+    border-top: 3px solid #004ea2;
+    padding: 40px 0px 40px 123px;
+    border-bottom: 1px solid #898989;
+    
+}
+.complete th{
+    padding-bottom: 20px;
+    text-align: left;
+    padding-right: 40px;
+}
+.complete tr:last-child th{
+    padding-bottom: 0;
+}
+.complete tr th:first-child{
+    color: #898989;
+}
+.idColor{
+    color: #004ea2;
+}
+.completeBtn{
+    width: 150px;
+    height: 45px;
+    border: none;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #004ea2;
+    margin-top: 38px;
+    margin-bottom: 101px;
+}

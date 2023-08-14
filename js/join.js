@@ -4,6 +4,7 @@ $(function(){
     const memberLog = $('.snsLoginHide');
     const buisnessLog = $('.buisnessLog');
     const buisnessLogNext = $('.buisnessLog.buisnessLogNext');
+    const completed = $('.completed');
 
 
     buisnessLogNext.hide();
@@ -23,4 +24,15 @@ $(function(){
         buisnessLogNext.hide();
         buisnessLog.show();
     });
+
+
+    //왜 안되니??
+    completed.click(function(){
+        console.log('hi')
+        $('.membertab').hide();
+        $('.join').hide();
+        $('.memberLog').hide();
+        $('.completeWrap').show();
+    })
+
 })
