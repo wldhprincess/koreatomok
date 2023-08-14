@@ -2,8 +2,10 @@ $(function(){
     const normalMemberBtn = $('#normalMemberBtn');
     const businessMemberBtn = $('#businessMemberBtn');
     const memberLog = $('.snsLoginHide');
-    const buisnessLog = $('.buisnessLog');
+    const buisnessLog = $('#buisnessLogShow');
+    // 왜 안사라짐?
     const buisnessLogNext = $('.buisnessLog.buisnessLogNext');
+    
     const completed = $('.completed');
 
 
@@ -21,12 +23,12 @@ $(function(){
         businessMemberBtn.toggleClass('clickBtn');
         normalMemberBtn.removeClass('clickBtn');
         memberLog.hide();
-        buisnessLogNext.hide();
         buisnessLog.show();
+        buisnessLogNext.hide();
     });
 
 
-    //왜 안되니??
+    //왜 안되냐?
     completed.click(function(){
         console.log('hi')
         $('.membertab').hide();

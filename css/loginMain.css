@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@import url(./style.css);
+@import url(./font.css);
+@import url(./layout.css);
+@import url(./all.css);
+
+
+.buy .nameColor{
+    color: #004ea2;
+    padding-right: 0;
+}
+.buy table{
+    width: 100%;
+    border-top: 3px solid #004ea2;
+}
+.buy table tr:first-child th{
+    height: 50px;
+    line-height: 50px;
+    background: #fbfbfb;
+}
+.buy tr{
+    border-bottom: 1px solid #898989;
+}
+.buy th{
+    height: 60px;
+    line-height: 60px;
+}
+
