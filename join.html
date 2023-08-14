@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>코리아토목 로그인</title>
+    <title>코리아토목 회원가입</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/loginStyle.css">
+    <link rel="stylesheet" href="./css/joinstyle.css">
 </head>
 <body>
     <div id="wrap">
@@ -30,8 +30,8 @@
                         </table>
                     </div>
                     <div class="login">
-                        <a href="javascript:">로그인</a>
-                        <a href="./join.html">회원가입</a>
+                        <a href="./login.html">로그인</a>
+                        <a href="javascript:">회원가입</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
             <div class="innerWrap">
                 <form action="">
                     <h1 class="login">
-                        로그인
+                        <span>코리아토목</span> 회원가입
                     </h1>
                     <div class="membertab">
                         <div class="memberselect">
@@ -65,88 +65,151 @@
                             </div>
                         </div>
                     </div>
+                    <div class="join">
+                        <div class="joinCheck">
+                            <label for="checkbox" class="custom-checkbox-label">
+                                <input type="checkbox" id="checkbox"> 개인정보 취급방침
+                                <span class="checkbox-image"></span>
+                                <button type="button">전문보기</button>
+                            </label>
+                            <label for="checkbox1"  class="custom-checkbox-label">
+                                <input type="checkbox" id="checkbox1"> 이용약관
+                                <span class="checkbox-image"></span>
+                                <button type="button">전문보기</button>
+                            </label>
+                        </div>
+                    </div>
                     <div class="memberLog">
-                        <div class="snsLogin">
-                            <button type="button" class="kakao">카카오톡으로 로그인</button>
-                            <button type="button" class="naver">네이버로 로그인</button>
-                            <button type="button" class="google">구글로 로그인</button>
-                        </div>
-                        <a href="tel:031-297-9825" class="serviceCall">고객센터 및 간편가입 오류문의 <span>&nbsp;&nbsp;031-297-9825</span></a>
-                        <p class="underbar">-</p>
-                        <div class="join">
-                            <div class="joinCheck">
-                                <label for="checkbox" class="custom-checkbox-label">
-                                    <input type="checkbox" id="checkbox"> 개인정보 취급방침
-                                    <span class="checkbox-image"></span>
-                                    <button type="button">전문보기</button>
-                                </label>
-                                <label for="checkbox1"  class="custom-checkbox-label">
-                                    <input type="checkbox" id="checkbox1"> 이용약관
-                                    <span class="checkbox-image"></span>
-                                    <button type="button">전문보기</button>
-                                </label>
+                        <div class="snsLoginHide">
+                            <div class="snsLogin">
+                                <button type="button" class="kakao">카카오톡 간편가입</button>
+                                <button type="button" class="naver">네이버로 간편가입</button>
+                                <button type="button" class="google">구글 간편가입</button>
                             </div>
-                            <div class="joinBtn">
-                                <button type="button">
-                                    간편가입하기
-                                </button>
-                            </div>
+                            <a href="tel:031-297-9825" class="serviceCall">고객센터 및 간편가입 오류문의 <span>&nbsp;&nbsp;031-297-9825</span></a>
+                            <p class="underbar">-</p>
+                            <address class="Copyright">
+                                Copyright &copy; KOREA TOMOK. All rights reserved 
+                            </address>
                         </div>
                     </div>
-                    <div class="buisnessLog">
-                        <table>
-                            <tr>
-                                <th>아이디</th>
-                                <td colspan="2">
-                                    <label for="">
-                                        <input type="text" placeholder="아이디를 입력하세요">
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>비밀번호</th>
-                                <td>
-                                    <label for="">
-                                        <input type="password" placeholder="비밀번호를 입력하세요">
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>휴대전화인증</th>
-                                <td>
-                                    <label for="">
-                                        <input type="text" class="telW" placeholder="휴대전화번호를 입력하세요">
-                                        <button type="button" class="telWBtn">인증하기</button><br>
-                                        <input type="text" placeholder="인증번호 입력">
-                                        <p class="time">03:00:59</p>
-                                    </label>
-                                    <button type="button" class="submit">로그인</button>
-                                </td>
-                            </tr>
-                        </table>
-                        <div class="join">
-                            <div class="joinCheck">
-                                <label for="checkbox2" class="custom-checkbox-label">
-                                    <input type="checkbox" id="checkbox2"> 개인정보 취급방침
-                                    <span class="checkbox-image"></span>
-                                    <button type="button">전문보기</button>
-                                </label>
-                                <label for="checkbox3"  class="custom-checkbox-label">
-                                    <input type="checkbox" id="checkbox3"> 이용약관
-                                    <span class="checkbox-image"></span>
-                                    <button type="button">전문보기</button>
-                                </label>
+                    <div class="buisnessjoin">
+                        <div class="buisnessLog">
+                            <h3>필수정보 입력</h3>
+                            <table>
+                                <tr>
+                                    <th>아이디</th>
+                                    <td>
+                                        <label for="">
+                                            <input type="text" placeholder="아이디를 입력하세요" class="id inputW">
+                                            <button type="button" class="idCheck btnW">중복확인</button>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>비밀번호</th>
+                                    <td>
+                                        <label for="">
+                                            <input type="password" placeholder="비밀번호를 입력하세요">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>비밀번호 확인</th>
+                                    <td>
+                                        <label for="">
+                                            <input type="password" placeholder="비밀번호를 입력하세요">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>휴대전화인증</th>
+                                    <td>
+                                        <label for="" class="CertificationWrap">
+                                            <input type="text" class="inputW" placeholder="전화번호 입력">
+                                            <button type="button" class="telWBtn btnW">인증하기</button>
+                                            <input type="text" placeholder="인증번호 입력" class="Certification "><span class="absolute">02:00:59</span>
+                                        </label>
+                                        <div class="arrowNext">
+                                            <div class="arrowBtn">
+                                                <a href="javascript:" title="이전">이전</a>
+                                            </div>
+                                            <div class="nextBtn">
+                                                <a href="javascript:" title="다음">다음</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="buisnessLogNext buisnessLog">
+                            <div class="information">
+                                <h3>선택 정보 입력</h3>
+                                <p>이곳에서 입력하시면 견적 요청시 추가로 정보를 입력하지 않습니다.</p>
                             </div>
-                            <div class="joinBtn">
-                                <button type="button">
-                                    사업자 회원 가입하기
-                                </button>
-                            </div>
+                            <table>
+                                <tr>
+                                    <th>담당자명</th>
+                                    <td>
+                                        <label for="">
+                                            <input type="text">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>담당자 연락처</th>
+                                    <td>
+                                        <label for="">
+                                            <input type="text" class="inputW">
+                                            <button type="button" class="btnW btnBack">통신사 선택</button>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>회사명</th>
+                                    <td>
+                                        <label for="">
+                                            <input type="text">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>회사주소</th>
+                                    <td>
+                                        <label for="">
+                                            <input type="text"  class="inputW">
+                                            <button type="button" class="btnW">우편번호</button>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상세주소</th>
+                                    <td>
+                                        <label for="">
+                                            <input type="text">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>사업자등록증</th>
+                                    <td>
+                                        <label for="">
+                                            <input type="text" class="inputW">
+                                            <button type="button" class="btnW">찾아보기</button>
+                                        </label>
+                                        <div class="arrowNext">
+                                            <div class="arrowBtn">
+                                                <a href="javascript:" title="이전">이전</a>
+                                            </div>
+                                            <div class="nextBtn">
+                                                <a href="javascript:" title="다음">완료</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
-                    <address class="Copyright">
-                        Copyright &copy; KOREA TOMOK. All rights reserved 
-                    </address>
                 </form>
             </div>
         </main>
@@ -254,7 +317,7 @@
                             
                                 // 지도를 생성하는데 필요한 기본 옵션 설정
                                 var options = {
-                                    center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심 좌표 (위도, 경도)
+                                    center: new kakao.maps.LatLng(37.22935437525413, 126.97293607845405), // 지도의 중심 좌표 (위도, 경도)
                                     level: 3 // 지도의 확대 레벨 (1부터 14까지 가능)
                                 };
                             

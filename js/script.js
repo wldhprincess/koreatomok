@@ -113,17 +113,30 @@ $(function() {
     bannerR.addEventListener('mouseout', () => {
         bannerL.style.width = '1126px'; // 원래 넓이
     });
-
-    let lastScroll = 0;
-    $(window).on('scroll', function(){
-        let scrollTop = $(this).scrollTop();
-        if(scrollTop > lastScroll) {
-            $('.scrollHeader').show();
-        } else {
-            $('.scrollHeader').hide();
-        }
-        lastScroll = scrollTop;
+    $('.bannerButton button').click(function(){
+        bannerR.style.width = '1126px';
+        bannerL.style.width = '385px'; 
     });
+
+    const scrollHeader = document.querySelector('.scrollHeader');
+    const topBtn = document.querySelector('.topBtn');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 200) {
+            scrollHeader.style.display = 'block';
+        } else {
+            scrollHeader.style.display = 'none';
+        }
+    });
+
+    topBtn.addEventListener('click', () => {
+        // 스크롤 맨 위로 이동하는 코드
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
     
 
 

@@ -5,13 +5,13 @@
 @import url(./layout.css);
 @import url(./all.css);
 
-.joinCheck label, .joinBtn button{
+.joinCheck label, .joinBtn button, .buisnessLog input, .time{
     font-family: 'NanumSquareR', sans-serif;
 }
 .main .login , .memberselect button{
     font-family: 'NanumSquareL', sans-serif;
 }
-.snsLogin button, .custom-checkbox-label button{
+.snsLogin button, .custom-checkbox-label button, .buisnessLog th, .buisnessLog table button{
     font-family: 'NanumSquareEB', sans-serif;
 }
 
@@ -27,6 +27,7 @@
     padding-top: 70px;
     padding-bottom: 51px;
     font-size: 2.250em;
+    letter-spacing: -2px;
 }
 .membertab{
     width: 100%;
@@ -45,6 +46,9 @@
 .buisnessmember{
     width: 50%;
 }
+
+/* memberLog */
+
 .memberselect button{
     width: 100%;
     height: 100%;
@@ -56,12 +60,11 @@
     padding-top: 8px;
     color: #fff;
     font-weight: bold;
-}
-.member button{
-    background: #004ea2;
-}
-.buisnessmember button{
+    letter-spacing: -.5px;
     background: #898989;
+}
+.memberselect button.clickBtn{
+    background: #004ea2;
 }
 .snsLogin button{
     height: 65px;
@@ -70,6 +73,7 @@
     border: none;
     color: #fff;
     font-size: 1.125em;
+    letter-spacing: -.5px;
 }
 .snsLogin .kakao{
     background: #ffdf00;
@@ -85,10 +89,17 @@
     display: block;
     margin: 11px 0 14px;
     color: #898989;
+    letter-spacing: -2px;
+}
+.serviceCall span{
+    letter-spacing: -1px;
 }
 .underbar{
     color: #898989;
 }
+
+
+/* checkbox */
 .join{
     display: flex;
     justify-content: space-between;
@@ -102,6 +113,7 @@
 .joinCheck label{
     display: block;
     cursor: pointer;
+    letter-spacing: -.5px;
 }
 .joinCheck label{
     font-size: 0.875em;
@@ -148,6 +160,10 @@
     background: #898989;
     color: #fff;
 }
+.custom-checkbox-label input[type="checkbox"]:checked + span.checkbox-image + button {
+    background-color: #004ea2;
+    color: white; /* Optional: Change text color */
+}
 .joinBtn button{
     width: 200px;
     height: 55px;
@@ -158,8 +174,75 @@
     color: #fff;
 }
 
+
+
+
+
+/* buisnessLog */
+.buisnessLog{
+    display: none;
+}
+.buisnessLog th{
+    text-align: left;
+    font-size: 0.938em;
+    color: #898989;
+    letter-spacing: -.5px;
+    width: 110px;
+}
+.buisnessLog tr{
+    position: relative;
+}
+.buisnessLog input{
+    height: 45px;
+    background: #004ea2;
+    border: none;
+    margin-bottom: 9px;
+    color: #a2c1e3;
+    outline: none;
+    font-weight: bold;
+    padding-left: 14px;
+    font-size: 0.813em;
+    width: 374px;
+}
+.buisnessLog input::placeholder{
+    color: #a2c1e3;
+}
+.buisnessLog input.telW, .telWBtn{
+    width: 184px;
+}
+.buisnessLog table button{
+    height: 47px;
+    border: none;
+    color: #fff;
+    background: #000;
+}
+.buisnessLog .telWBtn{
+    position: absolute;
+    right: 0;
+    padding: 1px 0;
+    font-size: 0.938em;
+    color: #898989;
+}
+.buisnessLog table button.submit{
+    width: 390px;
+    margin-top: 28px;
+    height: 52px;
+    font-size: 1.063em;
+    margin-bottom: 52px;
+}
+.time{
+    font-size: 0.750em;
+    font-weight: bold;
+}
+
+
+
+
 .Copyright{
     margin-bottom: 91px;
     color: #898989;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.750em;
+    text-transform: uppercase;
+    letter-spacing: -.3px;
 }
