@@ -51,17 +51,17 @@
         </header>
         <main class="main">
             <div class="innerWrap">
-                <form action="">
+                <form id="loginForm" action="">
                     <h1 class="login">
                         <span>코리아토목</span> 회원가입
                     </h1>
                     <div class="membertab">
                         <div class="memberselect">
                             <div class="member">
-                                <button type="button" id="normalMemberBtn">일반 회원</button>
+                                <button type="button" id="normalMemberTab">일반 회원</button>
                             </div>
                             <div class="buisnessmember">
-                                <button type="button" id="businessMemberBtn">사업자 회원</button>
+                                <button type="button" id="businessMemberTab">사업자 회원</button>
                             </div>
                         </div>
                     </div>
@@ -101,8 +101,8 @@
                                     <th>아이디</th>
                                     <td>
                                         <label for="">
-                                            <input type="text" placeholder="아이디를 입력하세요" class="id inputW">
-                                            <button type="button" class="idCheck btnW">중복확인</button>
+                                            <input type="text" placeholder="아이디를 입력하세요" id="loginId" class="id inputW">
+                                            <button type="button" class="idCheck btnW" onclick="checkId()">중복확인</button>
                                         </label>
                                     </td>
                                 </tr>
@@ -201,8 +201,8 @@
                                             <div class="arrowBtn">
                                                 <a href="javascript:" title="이전">이전</a>
                                             </div>
-                                            <div class="nextBtn">
-                                                <a href="javascript:" title="다음" class="completed">완료</a>
+                                            <div class="nextBtn completed">
+                                                <a href="javascript:" title="다음" >완료</a>
                                             </div>
                                         </div>
                                     </td>
@@ -368,6 +368,6 @@
         </footer>
     </div>
     <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script src="./js/login.js"></script>
+    <script src="./js/join.js"></script>
 </body>
 </html>

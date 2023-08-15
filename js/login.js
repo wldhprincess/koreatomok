@@ -1,21 +1,21 @@
 $(function(){
-    const normalMemberBtn = $('#normalMemberBtn');
-    const businessMemberBtn = $('#businessMemberBtn');
+    const normalMemberTab = $('#normalMemberTab');
+    const businessMemberTab = $('#businessMemberTab');
     const memberLog = $('.memberLog');
     const buisnessLog = $('.buisnessLog');
 
-    normalMemberBtn.addClass('clickBtn');
+    normalMemberTab.addClass('clickBtn');
 
-    normalMemberBtn.click(function() {
-        normalMemberBtn.toggleClass('clickBtn');
-        businessMemberBtn.removeClass('clickBtn');
+    normalMemberTab.click(function() {
+        normalMemberTab.toggleClass('clickBtn');
+        businessMemberTab.removeClass('clickBtn');
         memberLog.show();
         buisnessLog.hide();
     });
 
-    businessMemberBtn.click(function() {
-        businessMemberBtn.toggleClass('clickBtn');
-        normalMemberBtn.removeClass('clickBtn');
+    businessMemberTab.click(function() {
+        businessMemberTab.toggleClass('clickBtn');
+        normalMemberTab.removeClass('clickBtn');
         memberLog.hide();
         buisnessLog.show();
     });

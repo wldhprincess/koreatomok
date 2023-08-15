@@ -1,5 +1,7 @@
+var rightClick = false;
 $(function() {
 
+    
     /* let optionarea0 = ["1단계-품목의 소재를 선택해 주세요","철근콘크리트","콘크리트","스틸","석재","PE/PVC","기타"],
         optionarea1 = ["2단계-품목을 선택해 주세요",'암거','플륨관/수로관','측구수로관','사각수로관','원심력사각수로관','흄관/레진관','VR관','PC방호벽','PHC파일','옹벽블록'],
         optionarea2 = ["2단계-품목을 선택해 주세요",'맨홀','인터로킹(보도블록)','점토블록','식생축조블록','보강토블록','콘크리트 경계석','호안블록','잔디블록','콘크리트벽돌','가로등 기초','가로수보호판','빗물받이 블록','PC트렌치','레디락블록'],
@@ -102,20 +104,39 @@ $(function() {
 
         
     const bannerR = document.querySelector('.BannerR');
-    const bannerRhover = document.querySelector('.bannerRhover');
     const bannerL = document.querySelector('.BannerL');
-    const btnWrap = document.querySelector('.btnWrap');
+
+    function showRightTab(){
+        bannerL.style.width = '385px'; 
+        bannerR.style.width = '1126px';
+    }
+
+    function showLeftTab(){
+        bannerL.style.width = '1126px'; 
+        bannerR.style.width = '385px';
+    }
+
 
     bannerR.addEventListener('mouseover', () => {
-        bannerL.style.width = '385px'; // 줄어든 넓이
+        showRightTab();
     });
 
     bannerR.addEventListener('mouseout', () => {
-        bannerL.style.width = '1126px'; // 원래 넓이
+        if(rightClick == true){
+            showRightTab();
+        }else{
+            showLeftTab();
+        }
     });
+
+    bannerL.addEventListener("mouseover", () => {
+        showLeftTab();
+        rightClick = false;
+    })
+
     $('.bannerButton button').click(function(){
-        bannerR.style.width = '1126px';
-        bannerL.style.width = '385px'; 
+        showRightTab();
+        rightClick = true;     
     });
 
     const scrollHeader = document.querySelector('.scrollHeader');
