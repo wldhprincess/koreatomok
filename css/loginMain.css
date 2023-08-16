@@ -6,6 +6,19 @@
 @import url(./all.css);
 
 
+/* .buy th button {
+    font-family: 'NanumSquareB', sans-serif;
+} */
+/* {
+    font-family: 'NanumSquareL', sans-serif;
+}
+{
+    font-family: 'NanumSquareR', sans-serif;
+}
+{
+    font-family: 'NanumSquareEB', sans-serif;
+} */
+
 .buy .nameColor{
     color: #004ea2;
     padding-right: 0;
@@ -17,13 +30,77 @@
 .buy table tr:first-child th{
     height: 50px;
     line-height: 50px;
-    background: #fbfbfb;
+    background: #f2f2f2;
 }
 .buy tr{
-    border-bottom: 1px solid #898989;
+    border-bottom: 1px solid #c9caca;
+    position: relative;
+}
+.buy tr:first-child th{
+    top: 0;
+}
+.buy tr th:first-child{
+    width: 100px;
+    padding-left: 0;
+}
+.buy tr th:first-child{
+    width: 100px;
+    padding-left: 0;
+    top: 0;
+}
+.buy .fontUp th{
+    font-size: 0.875em;
 }
 .buy th{
     height: 60px;
     line-height: 60px;
+    position: relative;
+    top: -25px;
+    font-size: 0.813em;
+    letter-spacing: -.5px;
+}
+.buy th input{
+    width: 72px;
+    height: 33px;
+    border: 0;
+    border-radius: 0;
+    background: #f0f0f0;
+    text-align: center;
+}
+.buy th input:focus{
+    outline: 1px solid #000;
+}
+.buy th button{
+    width: 70px;
+    height: 35px;
+    border: 0;
+    border-radius: 0;
+    background: #000;
+    color: #fff;
+    font-size: 0.875em;
+    letter-spacing: -.5px;
+    position: relative;
+    top: -1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buy th button:hover{
+    background: #004ea2;
+}
+.buyImg{
+    width: 100%;
+    height: 100%;
+    background: url(../img/img24.png) no-repeat center; 
+}
+.W100{
+    width: 100px;
+}
+.W110{
+    width: 110px;
+}
+.W135{
+    width: 135px;
+}
+.W290{
+    width: 290px;
 }
 

@@ -30,8 +30,9 @@
                         </table>
                     </div>
                     <div class="login">
-                        <a href="./login.html">로그인</a>
-                        <a href="./join.html">회원가입</a>
+                        <a href="./index.html">로그아웃</a>
+                        <a href="javascript:">견적요청현황</a>
+                        <a href="javascript:">발주현황</a>
                     </div>
                 </div>
             </div>
@@ -952,20 +953,20 @@
                     </div>
                 </div>
                 <table>
-                    <tr>
+                    <tr class="fontUp">
                         <th>사진</th>
-                        <th>품명</th>
+                        <th class="W290">품명</th>
                         <th>규격</th>
-                        <th>재고</th>
-                        <th>중량</th>
-                        <th>도매단가</th>
-                        <th>배송지</th>
-                        <th>구매날짜</th>
+                        <th class="W100">재고</th>
+                        <th class="W100">중량</th>
+                        <th class="W110">도매단가</th>
+                        <th class="W135">배송지</th>
+                        <th class="W135">구매날짜</th>
                         <th>견적수량</th>
                         <th>견적추가</th>
                     </tr>
                     <tr>
-                        <th><div class="buyImg">이미지넣</div></th>
+                        <th><div class="buyImg"></div></th>
                         <th>안전중하중그레이팅 수로용(집수정용)</th>
                         <th>0.8*0.8*130T*130T_구</th>
                         <th>220</th>
@@ -977,7 +978,7 @@
                         <th><button type="button">견적추가</button></th>
                     </tr>
                     <tr>
-                        <th><div class="buyImg">이미지넣</div></th>
+                        <th><div class="buyImg"></div></th>
                         <th>안전중하중그레이팅 수로용(집수정용)</th>
                         <th>0.8*0.8*130T*130T_구</th>
                         <th>220</th>
@@ -989,7 +990,7 @@
                         <th><button type="button">견적추가</button></th>
                     </tr>
                     <tr>
-                        <th><div class="buyImg">이미지넣</div></th>
+                        <th><div class="buyImg"></div></th>
                         <th>안전중하중그레이팅 수로용(집수정용)</th>
                         <th>0.8*0.8*130T*130T_구</th>
                         <th>220</th>
@@ -1001,7 +1002,7 @@
                         <th><button type="button">견적추가</button></th>
                     </tr>
                     <tr>
-                        <th><div class="buyImg">이미지넣</div></th>
+                        <th><div class="buyImg"></div></th>
                         <th>안전중하중그레이팅 수로용(집수정용)</th>
                         <th>0.8*0.8*130T*130T_구</th>
                         <th>220</th>
@@ -1031,7 +1032,7 @@
                             <tr>
                                 <td class="fontUp">
                                     <div class="imgBox">
-                                        <img src="./img/img1.png" alt="스틸그레이팅">
+                                        <a href="./product.html"><img src="./img/img1.png" alt="스틸그레이팅"></a>
                                     </div>
                                     <table class="tableWidth">
                                         <tr class="gradationborder">
@@ -1055,11 +1056,44 @@
                                     </table>
                                     <table class="btn3">
                                         <tr>
-                                            <td><button type="button" class="gray">도면보기</button></td>
-                                            <td><button type="button" class="gray">시공사진</button></td>
+                                            <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                            <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                             <td><button type="button" class="marginN">전체규격</button></td>
                                         </tr>
                                     </table>
+                                    <div class="drawing">
+                                        <div class="drawingImg">
+                                            <img src="./img/drawing1.png" alt="">
+                                            <img src="./img/drawing2.png" alt="">
+                                        </div>
+                                        <button type="button" class="drawingHide">닫기</button>
+                                    </div>
+                                    <div class="sigong">
+                                        <div class="sigongImg">
+                                            <div class="sigongImgL">
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin1.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin2.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin3.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin4.png" alt="">
+                                                </div>
+                                                <div class="smallImg"></div>
+                                                <div class="smallImg"></div>
+                                            </div>
+                                            <div class="sigongImgR">
+                                                <div class="bigImg">
+                                                    <img src="./img/sigongsajin5.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="sigongHide">닫기</button>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -1092,11 +1126,44 @@
                                     </table>
                                     <table class="btn3">
                                         <tr>
-                                            <td><button type="button" class="gray">도면보기</button></td>
-                                            <td><button type="button" class="gray">시공사진</button></td>
+                                            <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                            <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                             <td><button type="button" class="marginN">전체규격</button></td>
                                         </tr>
                                     </table>
+                                    <div class="drawing">
+                                        <div class="drawingImg">
+                                            <img src="./img/drawing1.png" alt="">
+                                            <img src="./img/drawing2.png" alt="">
+                                        </div>
+                                        <button type="button" class="drawingHide">닫기</button>
+                                    </div>
+                                    <div class="sigong">
+                                        <div class="sigongImg">
+                                            <div class="sigongImgL">
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin1.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin2.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin3.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin4.png" alt="">
+                                                </div>
+                                                <div class="smallImg"></div>
+                                                <div class="smallImg"></div>
+                                            </div>
+                                            <div class="sigongImgR">
+                                                <div class="bigImg">
+                                                    <img src="./img/sigongsajin5.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="sigongHide">닫기</button>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -1128,11 +1195,44 @@
                                     </table>
                                     <table class="btn3">
                                         <tr>
-                                            <td><button type="button" class="gray">도면보기</button></td>
-                                            <td><button type="button" class="gray">시공사진</button></td>
+                                            <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                            <td><button type="button" class="gray  sigongShow">시공사진</button></td>
                                             <td><button type="button" class="marginN">전체규격</button></td>
                                         </tr>
                                     </table>
+                                    <div class="drawing">
+                                        <div class="drawingImg">
+                                            <img src="./img/drawing1.png" alt="">
+                                            <img src="./img/drawing2.png" alt="">
+                                        </div>
+                                        <button type="button" class="drawingHide">닫기</button>
+                                    </div>
+                                    <div class="sigong  sigongLeft1">
+                                        <div class="sigongImg">
+                                            <div class="sigongImgL">
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin1.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin2.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin3.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin4.png" alt="">
+                                                </div>
+                                                <div class="smallImg"></div>
+                                                <div class="smallImg"></div>
+                                            </div>
+                                            <div class="sigongImgR">
+                                                <div class="bigImg">
+                                                    <img src="./img/sigongsajin5.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="sigongHide">닫기</button>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -1164,11 +1264,44 @@
                                     </table>
                                     <table class="btn3">
                                         <tr>
-                                            <td><button type="button" class="gray">도면보기</button></td>
-                                            <td><button type="button" class="gray">시공사진</button></td>
+                                            <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                            <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                             <td><button type="button" class="marginN">전체규격</button></td>
                                         </tr>
                                     </table>
+                                    <div class="drawing drawingLeft">
+                                        <div class="drawingImg">
+                                            <img src="./img/drawing1.png" alt="">
+                                            <img src="./img/drawing2.png" alt="">
+                                        </div>
+                                        <button type="button" class="drawingHide">닫기</button>
+                                    </div>
+                                    <div class="sigong sigongLeft2">
+                                        <div class="sigongImg">
+                                            <div class="sigongImgL">
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin1.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin2.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin3.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin4.png" alt="">
+                                                </div>
+                                                <div class="smallImg"></div>
+                                                <div class="smallImg"></div>
+                                            </div>
+                                            <div class="sigongImgR">
+                                                <div class="bigImg">
+                                                    <img src="./img/sigongsajin5.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="sigongHide">닫기</button>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -1200,11 +1333,44 @@
                                     </table>
                                     <table class="btn3">
                                         <tr>
-                                            <td><button type="button" class="gray">도면보기</button></td>
-                                            <td><button type="button" class="gray">시공사진</button></td>
+                                            <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                            <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                             <td><button type="button" class="marginN">전체규격</button></td>
                                         </tr>
                                     </table>
+                                    <div class="drawing">
+                                        <div class="drawingImg">
+                                            <img src="./img/drawing1.png" alt="">
+                                            <img src="./img/drawing2.png" alt="">
+                                        </div>
+                                        <button type="button" class="drawingHide">닫기</button>
+                                    </div>
+                                    <div class="sigong">
+                                        <div class="sigongImg">
+                                            <div class="sigongImgL">
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin1.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin2.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin3.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin4.png" alt="">
+                                                </div>
+                                                <div class="smallImg"></div>
+                                                <div class="smallImg"></div>
+                                            </div>
+                                            <div class="sigongImgR">
+                                                <div class="bigImg">
+                                                    <img src="./img/sigongsajin5.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="sigongHide">닫기</button>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -1236,11 +1402,44 @@
                                     </table>
                                     <table class="btn3">
                                         <tr>
-                                            <td><button type="button" class="gray">도면보기</button></td>
-                                            <td><button type="button" class="gray">시공사진</button></td>
+                                            <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                            <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                             <td><button type="button" class="marginN">전체규격</button></td>
                                         </tr>
                                     </table>
+                                    <div class="drawing">
+                                        <div class="drawingImg">
+                                            <img src="./img/drawing1.png" alt="">
+                                            <img src="./img/drawing2.png" alt="">
+                                        </div>
+                                        <button type="button" class="drawingHide">닫기</button>
+                                    </div>
+                                    <div class="sigong">
+                                        <div class="sigongImg">
+                                            <div class="sigongImgL">
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin1.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin2.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin3.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin4.png" alt="">
+                                                </div>
+                                                <div class="smallImg"></div>
+                                                <div class="smallImg"></div>
+                                            </div>
+                                            <div class="sigongImgR">
+                                                <div class="bigImg">
+                                                    <img src="./img/sigongsajin5.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="sigongHide">닫기</button>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -1259,24 +1458,57 @@
                                                 <div class="border"></div>
                                             </td>
                                         </tr>
-                                        <table class="marginTop">
-                                            <tr>
-                                                <td class="marginRight paddingBottom">규격</td>
-                                                <td colspan="2" class="paddingBottom">0.8mx0.8mx2.0m_130Tx130T</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="marginRight">중량</td>
-                                                <td colspan="2">2,640kg</td>
-                                            </tr>
-                                        </table>
-                                        <table class="btn3">
-                                            <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
-                                                <td><button type="button" class="marginN">전체규격</button></td>
-                                            </tr>
-                                        </table>
                                     </table>
+                                    <table class="marginTop">
+                                        <tr>
+                                            <td class="marginRight paddingBottom">규격</td>
+                                            <td colspan="2" class="paddingBottom">0.8mx0.8mx2.0m_130Tx130T</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="marginRight">중량</td>
+                                            <td colspan="2">2,640kg</td>
+                                        </tr>
+                                    </table>
+                                    <table class="btn3">
+                                        <tr>
+                                            <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                            <td><button type="button" class="gray sigongShow">시공사진</button></td>
+                                            <td><button type="button" class="marginN">전체규격</button></td>
+                                        </tr>
+                                    </table>
+                                    <div class="drawing">
+                                        <div class="drawingImg">
+                                            <img src="./img/drawing1.png" alt="">
+                                            <img src="./img/drawing2.png" alt="">
+                                        </div>
+                                        <button type="button" class="drawingHide">닫기</button>
+                                    </div>
+                                    <div class="sigong  sigongLeft1">
+                                        <div class="sigongImg">
+                                            <div class="sigongImgL">
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin1.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin2.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin3.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin4.png" alt="">
+                                                </div>
+                                                <div class="smallImg"></div>
+                                                <div class="smallImg"></div>
+                                            </div>
+                                            <div class="sigongImgR">
+                                                <div class="bigImg">
+                                                    <img src="./img/sigongsajin5.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="sigongHide">닫기</button>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -1308,11 +1540,44 @@
                                     </table>
                                     <table class="btn3">
                                         <tr>
-                                            <td><button type="button" class="gray">도면보기</button></td>
-                                            <td><button type="button" class="gray">시공사진</button></td>
+                                            <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                            <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                             <td><button type="button" class="marginN">전체규격</button></td>
                                         </tr>
                                     </table>
+                                    <div class="drawing drawingLeft">
+                                        <div class="drawingImg">
+                                            <img src="./img/drawing1.png" alt="">
+                                            <img src="./img/drawing2.png" alt="">
+                                        </div>
+                                        <button type="button" class="drawingHide">닫기</button>
+                                    </div>
+                                    <div class="sigong  sigongLeft2">
+                                        <div class="sigongImg">
+                                            <div class="sigongImgL">
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin1.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin2.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin3.png" alt="">
+                                                </div>
+                                                <div class="smallImg">
+                                                    <img src="./img/sigongsajin4.png" alt="">
+                                                </div>
+                                                <div class="smallImg"></div>
+                                                <div class="smallImg"></div>
+                                            </div>
+                                            <div class="sigongImgR">
+                                                <div class="bigImg">
+                                                    <img src="./img/sigongsajin5.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="sigongHide">닫기</button>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -1438,11 +1703,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -1474,11 +1772,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong  sigongLeft1">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -1510,11 +1841,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing drawingLeft">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong sigongLeft2">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -1546,11 +1910,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -1582,11 +1979,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong sigongLeft1">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -1648,11 +2078,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -1684,11 +2147,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong sigongLeft1">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -1720,11 +2216,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing drawingLeft">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong sigongLeft2">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -1756,11 +2285,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -1792,11 +2354,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong sigongLeft1">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -1828,11 +2423,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing drawingLeft">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong sigongLeft2">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -1864,11 +2492,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -1900,11 +2561,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong sigongLeft1">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -1936,11 +2630,44 @@
                                         </table>
                                         <table class="btn3">
                                             <tr>
-                                                <td><button type="button" class="gray">도면보기</button></td>
-                                                <td><button type="button" class="gray">시공사진</button></td>
+                                                <td><button type="button" class="gray drawingShow">도면보기</button></td>
+                                                <td><button type="button" class="gray sigongShow">시공사진</button></td>
                                                 <td><button type="button" class="marginN">전체규격</button></td>
                                             </tr>
                                         </table>
+                                        <div class="drawing drawingLeft">
+                                            <div class="drawingImg">
+                                                <img src="./img/drawing1.png" alt="">
+                                                <img src="./img/drawing2.png" alt="">
+                                            </div>
+                                            <button type="button" class="drawingHide">닫기</button>
+                                        </div>
+                                        <div class="sigong sigongLeft2">
+                                            <div class="sigongImg">
+                                                <div class="sigongImgL">
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin1.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin2.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin3.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg">
+                                                        <img src="./img/sigongsajin4.png" alt="">
+                                                    </div>
+                                                    <div class="smallImg"></div>
+                                                    <div class="smallImg"></div>
+                                                </div>
+                                                <div class="sigongImgR">
+                                                    <div class="bigImg">
+                                                        <img src="./img/sigongsajin5.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="sigongHide">닫기</button>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>

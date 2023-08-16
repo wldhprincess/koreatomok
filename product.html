@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>코리아토목 로그인</title>
+    <title>코리아토목 사용자</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/loginStyle.css">
+    <link rel="stylesheet" href="./css/product.css">
 </head>
 <body>
     <div id="wrap">
@@ -13,7 +13,7 @@
             <div class="innerWrap">
                 <div class="headerWrap">
                     <div class="logo">
-                        <a href="./index.html">
+                        <a href="./loginMain.html">
                             <img src="./img/logo.png" alt="코리아토목 logo"> 
                         </a>
                     </div>
@@ -30,126 +30,105 @@
                         </table>
                     </div>
                     <div class="login">
-                        <a href="javascript:">로그인</a>
-                        <a href="./join.html">회원가입</a>
+                        <a href="./index.html">로그아웃</a>
+                        <a href="javascript:">견적요청현황</a>
+                        <a href="javascript:">발주현황</a>
                     </div>
-                </div>
-            </div>
-            <div class="scrollHeader">
-                <div class="innerWrap">
-                    <nav class="scrollNav">
-                        <ul>
-                            <li><a href="javascript:" title="철근콘크리트">철근콘크리트</a></li>
-                            <li><a href="javascript:" title="콘크리트">콘크리트</a></li>
-                            <li><a href="javascript:" title="스틸">스틸</a></li>
-                            <li><a href="javascript:" title="석재">석재</a></li>
-                            <li><a href="javascript:" title="PE/PVC">PE/PVC</a></li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </header>
-        <main class="main">
+        <section class="classifyWrap">
             <div class="innerWrap">
-                <form action="">
-                    <h1 class="login">
-                        로그인
-                    </h1>
-                    <div class="membertab">
-                        <div class="memberselect">
-                            <div class="member">
-                                <button type="button" id="normalMemberTab">일반 회원</button>
-                            </div>
-                            <div class="buisnessmember">
-                                <button type="button" id="businessMemberTab">사업자 회원</button>
-                            </div>
+                <div class="classify">
+                    <div class="classifyL">
+                        <div class="MainCategory">
+                            <ul class="classifyMC">
+                                <li>
+                                    <a href="javascript:" title="철근콘크리트">철근콘크리트</a>
+                                    <ul class="classifyA classifyAShow">
+                                        <li><a href="" title="암거">암거</a></li>
+                                        <li><a href="" title="플륨관/수로관">플륨관/수로관</a></li>
+                                        <li><a href="" title="측구수로관">측구수로관</a></li>
+                                        <li><a href="" title="사각수로관">사각수로관</a></li>
+                                        <li><a href="" title="원심력사각수로관">원심력사각수로관</a></li>
+                                        <li><a href="" title="흄관/레진관">흄관/레진관</a></li>
+                                        <li><a href="" title="VR관">VR관</a></li>
+                                        <li><a href="" title="PC방호벽">PC방호벽</a></li>
+                                        <li><a href="" title="PHC파일">PHC파일</a></li>
+                                        <li><a href="" title="옹벽블록">옹벽블록</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:" title="콘크리트">콘크리트</a>
+                                    <ul class="classifyA classifyA2">
+                                        <li><a href="" title="맨홀(전기, 통신, 상하수도)">맨홀(전기, 통신, 상하수도)</a></li>
+                                        <li><a href="" title="인터로킹(보도블록)">인터로킹(보도블록)</a></li>
+                                        <li><a href="" title="점토블록">점토블록</a></li>
+                                        <li><a href="" title="식생축조블록">식생축조블록</a></li>
+                                        <li><a href="" title="보강토블록">보강토블록</a></li>
+                                        <li><a href="" title="콘크리트경계석">콘크리트경계석</a></li>
+                                        <li><a href="" title="호안블록">호안블록</a></li>
+                                        <li><a href="" title="잔디블록">잔디블록</a></li>
+                                        <li><a href="" title="콘크리트벽돌">콘크리트벽돌</a></li>
+                                        <li><a href="" title="가로등기초">가로등기초</a></li>
+                                        <li><a href="" title="빗물받이블록">빗물받이블록</a></li>
+                                        <li><a href="" title="가로수보호판">가로수보호판</a></li>
+                                        <li><a href="" title="PC트렌치">PC트렌치</a></li>
+                                        <li><a href="" title="레디락블록">레디락블록</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:" title="스틸">스틸</a>
+                                    <ul class="classifyA">
+                                        <li><a href="" title="주철뚜껑">주철뚜껑</a></li>
+                                        <li><a href="" title="무소음트렌치">무소음트렌치</a></li>
+                                        <li><a href="" title="그레이팅">그레이팅</a></li>
+                                        <li><a href="" title="중하중 그레이팅">중하중 그레이팅</a></li>
+                                        <li><a href="" title="디자인 그레이팅">디자인 그레이팅</a></li>
+                                        <li><a href="" title="SUS그레이팅">SUS그레이팅</a></li>
+                                        <li><a href="" title="파형강관">파형강관</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:" title="석재">석재</a>
+                                    <ul class="classifyA">
+                                        <li><a href="" title="화강경계석">화강경계석</a></li>
+                                        <li><a href="" title="기타화강석">기타화강석</a></li>
+                                        <li><a href="" title="돌망태(개비온)">돌망태(개비온)</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:" title="PE/PVC">PE/PVC</a>
+                                    <ul class="classifyA classifyA3">
+                                        <li><a href="" title="PE이중벽관">PE이중벽관</a></li>
+                                        <li><a href="" title="PE다중벽관">PE다중벽관</a></li>
+                                        <li><a href="" title="고강성PVC이중벽관">고강성PVC이중벽관</a></li>
+                                        <li><a href="" title="PE/PY">PE/PY</a></li>
+                                        <li><a href="" title="THP관">THP관</a></li>
+                                        <li><a href="" title="PVC관">PVC관</a></li>
+                                        <li><a href="" title="HDPE관">HDPE관</a></li>
+                                        <li><a href="" title="카스토퍼">카스토퍼</a></li>
+                                        <li><a href="" title="그레이팅덮개">그레이팅덮개</a></li>
+                                        <li><a href="" title="플라스틱 그레이팅">플라스틱 그레이팅</a></li>
+                                        <li><a href="" title="몰탈용 고무시트">몰탈용 고무시트</a></li>
+                                        <li><a href="" title="PE사다리">PE사다리</a></li>
+                                        <li><a href="" title="부직포">부직포</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:" title="레미콘/아스콘">레미콘/아스콘</a>
+                                    <ul class="classifyA">
+                                        <li><a href="" title="레미콘">레미콘</a></li>
+                                        <li><a href="" title="아스콘">아스콘</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="memberLog">
-                        <div class="snsLogin">
-                            <button type="button" class="kakao">카카오톡으로 로그인</button>
-                            <button type="button" class="naver">네이버로 로그인</button>
-                            <button type="button" class="google">구글로 로그인</button>
-                        </div>
-                        <a href="tel:031-297-9825" class="serviceCall">고객센터 및 간편가입 오류문의 <span>&nbsp;&nbsp;031-297-9825</span></a>
-                        <p class="underbar">-</p>
-                        <div class="join">
-                            <div class="joinCheck">
-                                <label for="checkbox" class="custom-checkbox-label">
-                                    <input type="checkbox" id="checkbox"> 개인정보 취급방침
-                                    <span class="checkbox-image"></span>
-                                    <button type="button">전문보기</button>
-                                </label>
-                                <label for="checkbox1"  class="custom-checkbox-label">
-                                    <input type="checkbox" id="checkbox1"> 이용약관
-                                    <span class="checkbox-image"></span>
-                                    <button type="button">전문보기</button>
-                                </label>
-                            </div>
-                            <div class="joinBtn">
-                                <button type="button">
-                                    간편가입하기
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="buisnessLog">
-                        <table>
-                            <tr>
-                                <th>아이디</th>
-                                <td colspan="2">
-                                    <label for="">
-                                        <input type="text" placeholder="아이디를 입력하세요">
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>비밀번호</th>
-                                <td>
-                                    <label for="">
-                                        <input type="password" placeholder="비밀번호를 입력하세요">
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>휴대전화인증</th>
-                                <td>
-                                    <label for="">
-                                        <input type="text" class="telW" placeholder="휴대전화번호를 입력하세요">
-                                        <button type="button" class="telWBtn" id="startTimer">인증하기</button><br>
-                                        <input type="text" placeholder="인증번호 입력">
-                                        <p class="time"><span id="timer">00:03:00</span></p>
-                                    </label>
-                                    <button type="button" class="submit">로그인</button>
-                                </td>
-                            </tr>
-                        </table>
-                        <div class="join">
-                            <div class="joinCheck">
-                                <label for="checkbox2" class="custom-checkbox-label">
-                                    <input type="checkbox" id="checkbox2"> 개인정보 취급방침
-                                    <span class="checkbox-image"></span>
-                                    <button type="button">전문보기</button>
-                                </label>
-                                <label for="checkbox3"  class="custom-checkbox-label">
-                                    <input type="checkbox" id="checkbox3"> 이용약관
-                                    <span class="checkbox-image"></span>
-                                    <button type="button">전문보기</button>
-                                </label>
-                            </div>
-                            <div class="joinBtn">
-                                <button type="button">
-                                    사업자 회원 가입하기
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <address class="Copyright">
-                        Copyright &copy; KOREA TOMOK. All rights reserved 
-                    </address>
-                </form>
+                    <div class="classifyR"></div>
+                </div>
             </div>
-        </main>
+        </section>
         <footer class="footer">
             <div class="footerTop">
                 <div class="innerWrap">
@@ -286,6 +265,7 @@
         </footer>
     </div>
     <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script src="./js/login.js"></script>
+    <script src="./js/product.js"></script>
+    </div>
 </body>
 </html>

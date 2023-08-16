@@ -344,7 +344,7 @@ main{
 .marginTop{
     margin-top: 15px;
     font-size: 0.875em;
-    color: #898989;
+    color: #000;
 }
 .marginRight{
     padding-right: 70px;
@@ -360,6 +360,7 @@ main{
     border: none;
     color: #f7f7f7;
     font-size: 0.813em;
+    letter-spacing: -1px;
 }
 .gray{
     margin-right: 2px;
@@ -388,7 +389,7 @@ main{
     background:linear-gradient(-61deg, transparent 79px, #004ea2 0);
     position: absolute;
     left: 0;
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
     overflow: hidden;
 }
 .BannerL .btnWrap{
@@ -450,7 +451,7 @@ h4{
     background:linear-gradient(119deg, transparent 79px, #737373 0);
     position: absolute;
     right: 0;
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
     overflow: hidden;
 }
 .bannerButton{
@@ -472,7 +473,7 @@ h4{
 }
 .BannerR:hover{
     width: 1126px;
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .bannerButton button:hover{

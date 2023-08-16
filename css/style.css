@@ -10,7 +10,7 @@ h1,h2, .marginTop td,.menuNav {
 select,.concrete, h5, h3, .scrollNav ul li a {
     font-family: 'NanumSquareB', sans-serif;
 }
-h4, h6, .menuLogo .innerWrap > a, aside, .search input, .searchBottom td, .login a, .tableWidth td, .searchBottom th, .header .search td, .btn-select,.DepthPdName a ,.DepthPd p, .list-member button{
+h4, h6, .menuLogo .innerWrap > a, aside, .search input, .searchBottom td, .login a, .tableWidth td, .searchBottom th, .header .search td, .btn-select,.DepthPdName a ,.DepthPd p, .list-member button, .drawing button, .sigongHide{
     font-family: 'NanumSquareR', sans-serif;
 }
 .btnWrap button, .snsLogin button, .bannerButton button {
@@ -48,3 +48,94 @@ h4, h6, .menuLogo .innerWrap > a, aside, .search input, .searchBottom td, .login
     color: #fff;
 }
 
+
+
+.bestPrdWidth{
+    position: relative;
+}
+.drawing{
+    position: absolute;
+    width: 500px;
+    background: #fff;
+    border: 5px solid #000;
+    z-index: 26;
+    left: 120px;
+    top: 80px;
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+.drawingImg{
+    width: 100%;
+}
+.drawing button{
+    width: 150px;
+    height: 35px;
+    background: #283748;
+    color: #fff;
+    font-size: 0.938em;
+    margin: 30px 0 20px;
+}
+.drawing.drawingLeft{
+    left: -295px;
+}
+
+
+
+.sigong{
+    display: none;
+    width: 1035px;
+    height: 570px;
+    background: #fff;
+    border: 5px solid #000;
+    position: absolute;
+    z-index: 26;
+    top: 80px;
+    text-align: center;
+    left: 60px;
+}
+.sigongLeft1{
+    left: -560px;
+}
+.sigongLeft2{
+    left: -800px;
+}
+.sigongImg{
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+.sigongImgL{
+    width: 300px;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 460px;
+}
+.smallImg{
+    width: 140px;
+    height: 140px;
+    background: #f0f0f0;
+}
+.smallImg img{
+    width: 100%;
+    height: 100%;
+}
+.sigongImgR{
+    width: 665px;
+    height: 100%;
+    height: 460px;
+}
+.sigongImgR .bigImg img{
+    width: 100%;
+    height: 100%;
+}
+.sigongHide{
+    width: 150px;
+    height: 35px;
+    background: #283748;
+    color: #fff;
+    font-size: 0.938em;
+    margin-top: 5px;
+}

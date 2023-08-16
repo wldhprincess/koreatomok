@@ -101,7 +101,7 @@
                                     <th>아이디</th>
                                     <td>
                                         <label for="">
-                                            <input type="text" placeholder="아이디를 입력하세요" id="loginId" class="id inputW">
+                                            <input type="text" placeholder="아이디를 입력하세요" autocomplete="off" id="loginId" class="id inputW">
                                             <button type="button" class="idCheck btnW" onclick="checkId()">중복확인</button>
                                         </label>
                                     </td>
@@ -110,7 +110,7 @@
                                     <th>비밀번호</th>
                                     <td>
                                         <label for="">
-                                            <input type="password" placeholder="비밀번호를 입력하세요">
+                                            <input type="password" autocomplete="off" placeholder="비밀번호를 입력하세요" id="password" >
                                         </label>
                                     </td>
                                 </tr>
@@ -118,7 +118,7 @@
                                     <th>비밀번호 확인</th>
                                     <td>
                                         <label for="">
-                                            <input type="password" placeholder="비밀번호를 입력하세요">
+                                            <input type="password" autocomplete="off" placeholder="비밀번호를 입력하세요" id="password1" >
                                         </label>
                                     </td>
                                 </tr>
@@ -126,9 +126,9 @@
                                     <th>휴대전화인증</th>
                                     <td>
                                         <label for="" class="CertificationWrap">
-                                            <input type="text" class="inputW" placeholder="전화번호 입력">
-                                            <button type="button" class="telWBtn btnW">인증하기</button>
-                                            <input type="text" placeholder="인증번호 입력" class="Certification "><span class="absolute">02:00:59</span>
+                                            <input type="text" class="inputW" placeholder="전화번호 입력" id="phone" autocomplete="off">
+                                            <button type="button" class="telWBtn btnW" id="startTimer">인증하기</button>
+                                            <input type="text" placeholder="인증번호 입력" autocomplete="off" class="Certification " id="CertificationNumber" ><span class="absolute" id="timer">00:03:00</span>
                                         </label>
                                         <div class="arrowNext">
                                             <div class="arrowBtn">
@@ -152,7 +152,7 @@
                                     <th>담당자명</th>
                                     <td>
                                         <label for="">
-                                            <input type="text">
+                                            <input type="text" autocomplete="off" id="managerName">
                                         </label>
                                     </td>
                                 </tr>
@@ -160,7 +160,7 @@
                                     <th>담당자 연락처</th>
                                     <td>
                                         <label for="">
-                                            <input type="text" class="inputW">
+                                            <input type="text" autocomplete="off" class="inputW" id="managerNumber">
                                             <button type="button" class="btnW btnBack">통신사 선택</button>
                                         </label>
                                     </td>
@@ -169,7 +169,7 @@
                                     <th>회사명</th>
                                     <td>
                                         <label for="">
-                                            <input type="text">
+                                            <input type="text" autocomplete="off" id="companyName">
                                         </label>
                                     </td>
                                 </tr>
@@ -177,7 +177,7 @@
                                     <th>회사주소</th>
                                     <td>
                                         <label for="">
-                                            <input type="text"  class="inputW">
+                                            <input type="text" autocomplete="off" class="inputW" id="companyAddress">
                                             <button type="button" class="btnW">우편번호</button>
                                         </label>
                                     </td>
@@ -186,7 +186,7 @@
                                     <th>상세주소</th>
                                     <td>
                                         <label for="">
-                                            <input type="text">
+                                            <input type="text" autocomplete="off" id="detailedAddress">
                                         </label>
                                     </td>
                                 </tr>
@@ -194,7 +194,7 @@
                                     <th>사업자등록증</th>
                                     <td>
                                         <label for="">
-                                            <input type="text" class="inputW">
+                                            <input type="text" autocomplete="off" class="inputW" id="BusinessRegistration">
                                             <button type="button" class="btnW">찾아보기</button>
                                         </label>
                                         <div class="arrowNext">
@@ -227,7 +227,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <button type="button" class="completeBtn">로그인</button>
+                        <button type="button" class="completeBtn"><a href="./loginMain.html" title="다음">로그인</a></button>
                     </div>
                 </form>
             </div>

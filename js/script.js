@@ -180,6 +180,79 @@ $(function() {
         $('.menuLogo').show();
     });
 
+
+
+
+
+
+// *********************** 도면보기 click *********************** //
+    $('.drawingShow').click(function() {
+        var $closestBestPrdWidth = $(this).closest('.bestPrdWidth');
+        // Check if .drawing is currently visible within the same .bestPrdWidth
+        var isDrawingVisible = $closestBestPrdWidth.find('.drawing:visible').length > 0;
+        
+        // Hide all visible .drawing elements
+        $('.drawing:visible').hide();
+        
+        // If the clicked .drawingShow is within the same .bestPrdWidth and .drawing was visible, don't show it again
+        if (!isDrawingVisible || !$closestBestPrdWidth.is('.drawingShow')) {
+            $closestBestPrdWidth.find('.drawing').show();
+        }
+    });
+    
+    $('.drawingHide').click(function() {
+        $(this).closest('.drawing').hide();
+    });
+
+
+
+
+
+
+
+
+
+// *********************** 시공사진보기 click *********************** //
+    $('.sigongShow').click(function() {
+        var $closestBestPrdWidth = $(this).closest('.bestPrdWidth');
+        // Check if .drawing is currently visible within the same .bestPrdWidth
+        var isDrawingVisible = $closestBestPrdWidth.find('.sigong:visible').length > 0;
+        
+        // Hide all visible .drawing elements
+        $('.sigong:visible').hide();
+        
+        // If the clicked .drawingShow is within the same .bestPrdWidth and .drawing was visible, don't show it again
+        if (!isDrawingVisible || !$closestBestPrdWidth.is('.sigongShow')) {
+            $closestBestPrdWidth.find('.sigong').show();
+        }
+    });
+    
+    $('.sigongHide').click(function() {
+        $(this).closest('.sigong').hide();
+    });
+
+
+   /*  document.addEventListener("DOMContentLoaded", function() {
+        const drawingShowButtons = document.querySelectorAll(".drawingShow");
+        
+        drawingShowButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                const parentBestPrdWidth = button.closest(".bestPrdWidth");
+                const drawing = parentBestPrdWidth.querySelector(".drawing");
+                
+                if (drawing) {
+                    // drawing 요소의 display 속성을 토글하여 보이게 하거나 숨기기
+                    if (drawing.style.display === "none") {
+                        drawing.style.display = "block";
+                    } else {
+                        drawing.style.display = "none";
+                    }
+                }
+            });
+        });
+    }); */
+
+
 /*     $('.list-member, .bar, borderBox').hide(); */
     /* $('.list-memberShow, .showBar').show(); */
 

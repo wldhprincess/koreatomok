@@ -13,6 +13,9 @@
 label .absolute, .arrowBtn a, .nextBtn a, .buisnessinfor p{
     font-family: 'NanumSquareR', sans-serif;
 }
+.completeBtn a{
+    font-family: 'NanumSquareL', sans-serif;
+}
 
 .login span{
     color: #004ea2;
@@ -142,6 +145,7 @@ label button.btnW.btnBack{
     padding-bottom: 20px;
     text-align: left;
     padding-right: 40px;
+    letter-spacing: -1px;
 }
 .complete tr:last-child th{
     padding-bottom: 0;
@@ -156,11 +160,42 @@ label button.btnW.btnBack{
     width: 150px;
     height: 45px;
     border: none;
-    color: #fff;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     background: #004ea2;
     margin-top: 38px;
     margin-bottom: 101px;
+}
+.completeBtn a{
+    color: #fff;
+    font-family: 'NanumSquareL';
+    font-weight: bold;
+    font-size: 1.188em ;
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-text-fill-color: #a2c1e3;
+    -webkit-box-shadow: 0 0 0px 1000px #004ea2 inset;
+    box-shadow: 0 0 0px 1000px #004ea2 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:autofill,
+input:autofill:hover,
+input:autofill:focus,
+input:autofill:active {
+	-webkit-text-fill-color: #a2c1e3;
+    -webkit-box-shadow: 0 0 0px 1000px #004ea2 inset;
+    box-shadow: 0 0 0px 1000px #004ea2 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type=password]{
+    font-family:"굴림";
 }
