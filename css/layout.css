@@ -120,7 +120,7 @@
     cursor: pointer;
 }
 .topBtn:hover img{
-    content: url(/./img/upHover.svg);
+    content: url(../img/upHover.svg);
 }
 
 
