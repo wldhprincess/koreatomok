@@ -28,11 +28,12 @@ $(function(){
 
     $('.colorGrayBtn').click(function(){
       $('.colorGrayClick').toggle();
+      $(this).toggleClass('colorGrayChange');
     });
 
     $('.productPhoto').click(function(){
       $(this).toggleClass('productPtClick');
-      $(this).parent('.productsGrop').siblings().find('.productPhoto').removeClass('selectColor');
+      $('.productPhoto').not(this).removeClass('productPtClick');
     })
     
 
