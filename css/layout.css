@@ -298,6 +298,8 @@ main{
 }
 .bestProductName span{
     padding-right: 7px;
+    position: relative;
+    top: 2px;
 }
 
 .bestPrdWidth{
@@ -751,6 +753,10 @@ aside span{
     font-weight: bold;
     padding-bottom: 12px;
     }
+.service span{
+    position: relative;
+    top: 2px;
+}
 .information{
     padding-top: 50px;
 }

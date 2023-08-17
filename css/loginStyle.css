@@ -235,7 +235,9 @@
     font-size: 0.750em;
     font-weight: bold;
 }
-
+input[type=password]{
+    font-family: '굴림';
+}
 
 
 
