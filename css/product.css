@@ -12,6 +12,9 @@
 .tabMenu p{
     font-family: 'NanumSquareEB', sans-serif;
 }
+.selectBoxItem .bestProduct input{
+    font-family: 'NanumSquareL', sans-serif;
+}
 
 .classifyWrap{
     width: 100%;
@@ -106,6 +109,10 @@
 .classifyRWrap{
     display: flex;
     position: absolute;
+    display: none;
+}
+.classifyRWrapShow{
+    display: flex;
 }
 .classifyselect{
 width: 272px;
@@ -374,6 +381,7 @@ width: 272px;
     border-radius: 0;
     background: #f0f0f0;
     text-align: center;
+    font-weight: bold;
 }
 .selectBoxItem .bestProduct input:focus{
     outline: 1px solid #000;

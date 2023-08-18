@@ -17,6 +17,8 @@ $(function(){
       $(this).siblings().find('a').removeClass('selectColor');
       // $(this).siblings().find('.classifyA').hide();/*  */
     });
+
+    $('.productPhoto1 ').addClass('productPtClick');
     $('.selectItem > ul > li > .clickColor').click(function() {
       $('.productsBtmHide').hide();
       $('.productsBtmShow').show();
@@ -68,4 +70,28 @@ $(function(){
         toggleElement(classifyRWraps.eq(linkIndex));
       }
   });
+
+  $('#okBtn').click(function(){
+    $('.estimate').show();
+  })
+  $('.requestBtn').click(function(){
+    $('.lineHeight').show();
+    $('.estimate').css("height", ('885px'));
+    $('.estimateTitPadding input').addClass('inputBox');
+    if($('#address').val() == ''){
+      alert('주소를 입력해주세요')
+      return false;
+    } 
+    if($('#address2').val() == ''){
+      return false;
+    } 
+  })
+
+
+
+  $('.viewDetailsImgBox1').addClass('viewDetailsImgBoxBorder');
+  $('.viewDetailsImgBox').click(function(){
+    $(this).toggleClass('viewDetailsImgBoxBorder');
+    $('.viewDetailsImgBox').not(this).removeClass('viewDetailsImgBoxBorder');
+  })
 })
