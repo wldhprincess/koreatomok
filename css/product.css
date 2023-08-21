@@ -274,10 +274,11 @@ width: 272px;
     letter-spacing: -1px;
 }
 .selectBoxItem .bestProduct{
-    width: 1320px;
+    width: 100%;
 }
 .selectBoxItem .bestProduct table{
     font-size: 0.875em;
+    width: 100%;
 }
 .selectBoxItem .bestProduct table span{
     color: #797979;
@@ -290,6 +291,10 @@ width: 272px;
 .selectBoxItem .bestProduct table th{
     vertical-align: middle;
     line-height: 20px;
+}
+.selectBoxItem .bestProduct table td{
+    vertical-align: middle;
+    text-align: center;
 }
 .colorGrayClick{
     display: none;

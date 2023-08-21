@@ -329,6 +329,9 @@ margin-right: -3px;
   padding:  21px 13px 10px;
   display: none;
 }
+.estimateTit{
+  position: relative;
+}
 .estimateTit p:first-child{
   font-size: 1.188em;
   font-weight: bold;
@@ -341,6 +344,15 @@ margin-right: -3px;
   font-weight: bold;
   padding-bottom: 20px;
   border-bottom: 3px solid #000;
+}
+.estimateTit .closeBtn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background: url(../img/closeBlack.png) no-repeat ;
+  background-size: cover;
 }
 .blue{
   color: #004ea2;
@@ -420,6 +432,9 @@ margin-right: -3px;
   height: 27px;
   border: 3px solid #cc1414;
 }
+.estimateTitPadding input.marginL.inputBoxMarginL{
+  width: 257px;
+}
 .estimateTitPadding button{
   width: 90px;
   height: 35px;
@@ -435,11 +450,24 @@ margin-right: -3px;
   letter-spacing: -1px;
   font-weight: bold;
 }
-.paddingT{
-  padding: 6px 0 ;
+.estimate tr td:last-child.paddingT{
+  padding: 6px 0px 6px 19px ;
+  position: relative;
 }
-.marginL{
+.paddingT .inlineBlock{
+  display: inline-block;
+  font-size: 1.153em;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  display: none;
+}
+.estimateTitPadding button.expenseColor{
+  background: #004ea2;
+}
+.estimateTitPadding input.marginL{
   margin: 5px 0 0 51px;
+  width: 261px;
 }
 .lineHeight{
   display: none;
@@ -462,6 +490,9 @@ margin-right: -3px;
 }
 .estimate table.estimateTitPadding{
   margin-bottom: 24px;
+}
+.estimate table.estimateTitPadding td{
+  letter-spacing: -.6px;
 }
 .total{
   display: flex;

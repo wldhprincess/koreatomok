@@ -278,7 +278,7 @@ main{
 }
 .borderBottom{
     border-bottom: 1px solid #c9c9c9;
-    padding-top: 70px;
+    padding-top: 100px;
 }
 .bestProduct{
     margin-bottom: 106PX;
@@ -560,6 +560,10 @@ h6{
     height: 61px;
     top: 0;
 }
+.cont-select .btn-select.btn-selected{
+    padding-left: 0;
+    text-align: center;
+}
 .cont-select:hover .btn-select .bar{
     display: block;
 }
@@ -723,6 +727,7 @@ aside span{
     bottom: 20px;
     border-right: none; 
     z-index: 1;
+    width: 0;
 }
 .productBoxW form > table:nth-child(3){
     border-right: none;

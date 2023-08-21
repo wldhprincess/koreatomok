@@ -37,6 +37,12 @@ h4, h6, .menuLogo .innerWrap > a, aside, .search input, .searchBottom td, .login
     width: 202px;
     font-size: 1.16em;
 }
+.bigFont.fontDown1{
+    font-size: 1.275em;
+}
+.bigFont.fontDown2{
+    font-size: 1.175em;
+}
 .searchBottom th{
     font-weight: bold;
 }

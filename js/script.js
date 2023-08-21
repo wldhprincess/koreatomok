@@ -158,8 +158,21 @@ $(function() {
         });
     });
 
-    
+    $(".list-member button").click(function() {
+        var selectedText = $(this).text();
+        var $contSelect = $(this).closest(".cont-select");
+        $contSelect.find(".btn-select").html("<span class='bar showBar'></span> " + selectedText);
+        $contSelect.find(".btn-select").addClass('btn-selected');
+    });
 
+    $(".scrollNav ul li").click(function() {
+        let index = $(this).index();
+        $(this).toggleClass('.active');
+        let targetElement = $(".productsName").eq(index);
+        $("html, body").animate({
+            scrollTop: targetElement.offset().top
+        }, 800); 
+    });
 
     $(".btnWrap button").click(function() {
         let index = $(this).index();

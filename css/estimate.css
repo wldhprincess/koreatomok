@@ -4,3 +4,91 @@
 @import url(./font.css);
 @import url(./layout.css);
 @import url(./all.css);
+/* h1,h2, .marginTop td,.menuNav {
+    font-family: 'NanumSquareL', sans-serif;
+} */
+/* main {
+    font-family: 'NanumSquareB', sans-serif;
+} */
+/* h4, h6, .menuLogo .innerWrap > a, aside, .search input, .searchBottom td, .login a, .tableWidth td, .searchBottom th, .header .search td, .btn-select,.DepthPdName a ,.DepthPd p, .list-member button, .drawing button, .sigongHide{
+    font-family: 'NanumSquareR', sans-serif;
+} */
+.mainL label, .mainLBottom input.radioCheck{
+    font-family: 'NanumSquareEB', sans-serif;
+}
+
+
+main{
+    padding-top: 63px;
+}
+.bestProductName{
+    padding-bottom: 31px;
+}
+.mainL{
+    width: 550px;
+}
+.mainLTop, .mainLBottom{
+    border-top: 3px solid #000;
+}
+.mainLTop label, .mainLBottom label{
+    display: inline-block;
+    width: 130px;
+    letter-spacing: -.5px;
+    font-size: 0.938em;
+}
+.mainLBottom label.contents{
+    display: contents;
+}
+.mainLBottom .width70{
+    width: 130px;
+}
+.mainLTop input, .mainLBottom input{
+    width: 260px;
+    height: 30px;
+    border: none;
+    background: #f0f0f0;
+    margin: 10px 0;
+}
+.mainLBottom input.radioCheck{
+    width:  20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 7px;
+}
+.mainLBottom input.radioCheck.radioCheckL{
+    margin-left: 0;
+}
+.mainLTop input:focus{
+    outline: 0;
+}
+.mainLTopBottom label{
+    display: block;
+}
+.mainLBottom button{
+    background: #000;
+    color: #fff;
+    width: 90px;
+    height: 32px;
+    border: none;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.875em;
+}
+input[type='radio'],
+input[type='radio']:checked {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-right: 0.1rem;
+}
+
+input[type='radio'] {
+  background-color: #fff;
+  border: 2px solid #c2c2c2;
+}
+input[type='radio']:checked {
+  background-color: #004ea2;
+}

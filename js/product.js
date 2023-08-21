@@ -71,21 +71,6 @@ $(function(){
       }
   });
 
-  $('#okBtn').click(function(){
-    $('.estimate').show();
-  })
-  $('.requestBtn').click(function(){
-    $('.lineHeight').show();
-    $('.estimate').css("height", ('885px'));
-    $('.estimateTitPadding input').addClass('inputBox');
-    if($('#address').val() == ''){
-      alert('주소를 입력해주세요')
-      return false;
-    } 
-    if($('#address2').val() == ''){
-      return false;
-    } 
-  })
 
 
 
