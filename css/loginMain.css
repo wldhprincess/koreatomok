@@ -5,67 +5,57 @@
 @import url(./layout.css);
 @import url(./all.css);
 
-
-/* .buy th button {
-    font-family: 'NanumSquareB', sans-serif;
-} */
-/* {
+.headerFont th, .buy td{
     font-family: 'NanumSquareL', sans-serif;
 }
-{
+.buy td input {
+    font-family: 'SCDream2', sans-serif;
+}
+.buy td button{
     font-family: 'NanumSquareR', sans-serif;
 }
+/* 
+
 {
     font-family: 'NanumSquareEB', sans-serif;
 } */
-
+.top1{
+    position: relative;
+    top: 1px;
+}
 .buy .nameColor{
     color: #004ea2;
     padding-right: 0;
+}
+.buy .left3{
+    left: -3px;
 }
 .buy table{
     width: 100%;
     border-top: 3px solid #004ea2;
 }
-.buy table tr:first-child th{
-    height: 50px;
-    line-height: 50px;
-    background: #f2f2f2;
-}
 .buy tr{
     border-bottom: 1px solid #c9caca;
-    position: relative;
-}
-.buy tr:first-child th{
-    top: 0;
 }
 .buy tr th:first-child{
     width: 100px;
     padding-left: 0;
-}
-.buy tr th:first-child{
-    width: 100px;
-    padding-left: 0;
-    top: 0;
-}
-.buy .fontUp th{
-    font-size: 0.875em;
 }
 .buy th{
-    height: 60px;
-    line-height: 60px;
-    position: relative;
-    top: -25px;
-    font-size: 0.813em;
-    letter-spacing: -.5px;
+    font-size: 0.875em;
+    letter-spacing: -.77px;
+    background: #f2f2f2;
+    vertical-align: middle;
+    height: 50px;
 }
 .buy td{
     height: 60px;
     top: -25px;
     font-size: 0.813em;
-    letter-spacing: -.5px;
+    letter-spacing: normal;
     vertical-align: middle;
     text-align: center;
+    font-weight: normal;
 }
 .buy td input{
     width: 72px;
@@ -74,6 +64,9 @@
     border-radius: 0;
     background: #f0f0f0;
     text-align: center;
+    font-weight: 200;
+    font-size: 13px;
+    color: #000;
 }
 .buy td input:focus{
     outline: 1px solid #000;
@@ -85,11 +78,11 @@
     border-radius: 0;
     background: #000;
     color: #fff;
-    font-size: 0.875em;
-    letter-spacing: -.5px;
+    font-size: 12px;
+    letter-spacing: -.42px;
     position: relative;
     top: -1.5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
 }
 .buy td button:hover{
     background: #004ea2;

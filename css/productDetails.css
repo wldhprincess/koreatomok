@@ -7,19 +7,21 @@
 @import url(./product.css);
 
 
-.viewDetails h3, .productNumber, .viewDetailsRTop h4,.viewDetailsRMiddle span, .viewDetailsRMiddleR label input,.percent span, .bigF, .AdditionalProduct input, .sum strong, .sum .finalPrice span, .finalPriceSmallf, .DetailSigongBtn button{
+.viewDetailsRTop p,.viewDetails h3, .productNumber, .viewDetailsRTop h4, .viewDetailsRMiddleR label input, .bigF, .AdditionalProduct input, .finalPriceSmallf, .DetailSigongBtn button,.viewDetailsbottomLBtm p{
   font-family: 'NanumSquareL', sans-serif;
 }
-.viewDetailsRTop p, .viewDetailsRMiddleL, .viewDetailsRMiddleR,.viewDetailsbottomLBtm p, .estimateTit p:first-child, .estimateTit p:nth-child(2), .estimate table,.totalL, .totalR span{
+ .viewDetailsRMiddleL,.twoBtn button,.selectBoxItem .bestProduct th button, .estimateTit p:nth-child(2), .estimate table,.totalL, .totalR span,.viewDetailsRMiddle span, .AdditionalProduct span, .AdditionalProduct label, .smallF, .sum strong, .sum .finalPrice span, .estimateTitPadding button, .estimateTitPadding input,.totalBtn button{
   font-family: 'NanumSquareR', sans-serif;
 }
-.viewDetailsRMiddle strong, .percent strong, .viewDetailsbottomLTop strong, .smallF,.Additional, .AdditionalProduct strong, .estimateTit span, .totalR, .red{
+.viewDetailsRMiddle strong, .percent strong, .viewDetailsbottomLTop strong,.Additional, .AdditionalProduct strong,  .red, .estimateTit span{
   font-family: 'NanumSquareEB', sans-serif;
 }
-/* .viewDetailsRMiddleR{
+.viewDetailsRMiddleR, .Additional, .AdditionalProduct strong,.percent span,.totalR, .DetailSigongBtn button:hover, .estimateTit p:first-child{
   font-family: 'NanumSquareB', sans-serif;
-} */
-
+}
+.selectBoxItem .bestProduct input {
+  font-family: 'SCDream2', sans-serif;
+}
 
 .viewDetails{
   width: 100%;
@@ -56,6 +58,9 @@
   letter-spacing: -.5px;
   font-weight: bold;
 }
+.productNumber span{
+  padding-left: 3px;
+}
 .mainPhoto{
   width: 100%;
   height: 100%;
@@ -75,6 +80,7 @@
 .viewDetailsRTop h4{
   color: #000;
   font-size: 1.875em;
+  font-weight: normal;
 }
 .viewDetailsRTop p{
   font-size: 0.750em;
@@ -104,7 +110,6 @@
 .viewDetailsRMiddle span{
   font-size: 0.875em;
   color: #898989;
-  font-weight: bold;
 }
 .viewDetailsRMiddleL{
   display: flex;
@@ -120,7 +125,7 @@
 }
 .viewDetailsRMiddleR label{
   font-size: 0.813em;
-  font-weight: bold;
+  font-weight: normal;
   color: #000;
 }
 .viewDetailsRMiddleR label input{
@@ -152,6 +157,9 @@
 }
 .percent > div{
   padding-right: 20px;
+}
+.percent > div:last-child{
+  padding-right: 0;
 }
 .percent strong{
   font-weight: bold;
@@ -185,11 +193,9 @@ color: #22a21b;
 .bigF{
   font-size: 2.813em;
   line-height: 0.7;
-  font-weight: bold;
 }
 .smallF{
   font-size: 1.250em;
-  font-weight: bold;
   line-height: 2;
 }
 .viewDetailsbottomLBtm{
@@ -201,9 +207,10 @@ color: #22a21b;
 .viewDetailsbottomLBtm p{
   font-size: 0.813em;
   color: #898989;
-  width: 358px;
+  width: 357px;
   line-height: 21px;
   letter-spacing: -.5px;
+  font-weight: normal;
 }
 .viewDetailsImgBoxWrap{
   display: flex;
@@ -243,6 +250,7 @@ color: #22a21b;
 .Additional{
   font-size: 1em;
   padding-bottom: 10px;
+  font-weight: normal;
 }
 .AdditionalProduct{
   padding-top: 20px;
@@ -252,6 +260,7 @@ color: #22a21b;
 .AdditionalProduct strong{
   letter-spacing: -.6px;
   padding-right: 5px;
+  font-weight: normal;
 }
 .AdditionalProduct span{
   font-weight: bold;
@@ -268,9 +277,6 @@ color: #22a21b;
 .AdditionalProduct input:focus{
   outline: 1px solid;
 }
-.AdditionalProduct label{
-  font-weight: bold;
-}
 .paddingR{
   letter-spacing: -.3px;  
 }
@@ -281,20 +287,18 @@ color: #22a21b;
 }
 .sum strong{
   font-size: 1em;
-  font-weight: bold;
 }
 .finalPrice{
   display: flex;
 }
 .sum .finalPrice .finalPriceBigf{
   font-size: 1.563em;
-  font-weight: bold;
   color: #004ea2;
   padding-right: 6px;
 }
 .finalPriceSmallf{
-  font-weight: bold;
   font-size: 0.875em;
+  padding-top: 2px;
 }
 .twoBtn{
   position: absolute;
@@ -334,14 +338,12 @@ margin-right: -3px;
 }
 .estimateTit p:first-child{
   font-size: 1.188em;
-  font-weight: bold;
   padding-bottom: 7px;
   letter-spacing: -.5px;
 }
 .estimateTit p:nth-child(2){
   letter-spacing: -.7px;
   font-size: 0.813em;
-  font-weight: bold;
   padding-bottom: 20px;
   border-bottom: 3px solid #000;
 }
@@ -382,7 +384,6 @@ margin-right: -3px;
   margin-bottom: 31px;
   width: 100%;
   font-size: 0.813em;
-  font-weight: bold;
 }
 .estimate tr td:first-child{
   text-align: left;
@@ -445,10 +446,8 @@ margin-right: -3px;
   margin-right: 2px;
   background: #000;
   color: #fff;
-  font-size: 0.9em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
   letter-spacing: -1px;
-  font-weight: bold;
 }
 .estimate tr td:last-child.paddingT{
   padding: 6px 0px 6px 19px ;
@@ -502,7 +501,6 @@ margin-right: -3px;
 .totalL{
   font-size: 1.063em;
   letter-spacing: -1px;
-  font-weight: bold;
 }
 .totalR{
   font-size: 1.250em;
@@ -512,7 +510,6 @@ margin-right: -3px;
 .totalR span{
   color: #000;
   font-size: 0.688em;
-  font-weight: bold;
 }
 .totalBtn{
   display: flex;
@@ -526,8 +523,6 @@ margin-right: -3px;
   border: none;
   background: #004ea2;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
   font-size: 0.875em;
   letter-spacing: -1px;
 }
@@ -540,7 +535,11 @@ margin-right: -3px;
 
 
 
-
+.selectBoxItem .position .bestProduct td.W100 button{
+  width: 76px;
+  height: 32px;
+  font-weight: normal;
+}
 
 
 .bestProductBottom{
@@ -608,11 +607,11 @@ margin-right: -3px;
 
 .selectBoxItem .bestProduct .buyImg.buyImg1{
   background: url(../img/product16.png) no-repeat center;
-  background-size: contain;
+  background-size: auto;
 }
 .selectBoxItem .bestProduct .buyImg.buyImg2{
   background: url(../img/product17.png) no-repeat center;
-  background-size: contain;
+  background-size: auto;
 }
 
 

@@ -39,14 +39,13 @@ $(function(){
     })
     
 
-    $('.classifyRWrap').hide();
     $('.firstSelect').addClass('select');
     $('.clickColor').addClass('selectColor');
 
-    $('.classifyRWrapShow').show();
+    $('.classifyRBoxShow').show();
 
     const classifyLinks = $('.classifyA a');
-    const classifyRWraps = $('.classifyRWrap');
+    const classifyRWraps = $('.classifyRBox');
 
     function toggleElement(element) {
       element.toggle();

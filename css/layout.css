@@ -293,7 +293,7 @@ main{
     font-size: 1.250em;
     position: relative;
     padding-bottom: 12px;
-    letter-spacing: -3px;
+    letter-spacing: -1px;
     font-weight: bold;
 }
 .bestProductName span{
@@ -673,7 +673,7 @@ aside{
     width: 325PX;
     margin-top: 39px;
     font-size: 1.000em;
-    letter-spacing: -2px;
+    letter-spacing: -.88px;
 }
 aside span{
     letter-spacing: -.5px;
@@ -695,7 +695,8 @@ aside span{
     color: #fff;
 }
 .productBoxW a{
-    color: #000;
+    color: #000;    
+    font-weight: normal;
 }
 .productBoxW form{
     display: flex;

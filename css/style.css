@@ -4,13 +4,13 @@
 @import url(./layout.css);
 @import url(./all.css);
 
-h1,h2, .marginTop td,.menuNav {
+h1,h2, .marginTop td,.menuNav ,aside, .bestProductName{
     font-family: 'NanumSquareL', sans-serif;
 }
-select,.concrete, h5, h3, .scrollNav ul li a {
+select,.concrete, h5, h3, .scrollNav ul li a ,.productBoxW ul li:hover a{
     font-family: 'NanumSquareB', sans-serif;
 }
-h4, h6, .menuLogo .innerWrap > a, aside, .search input, .searchBottom td, .login a, .tableWidth td, .searchBottom th, .header .search td, .btn-select,.DepthPdName a ,.DepthPd p, .list-member button, .drawing button, .sigongHide{
+h4, h6, .menuLogo .innerWrap > a, .search input, .btn3 button, .searchBottom td, .login a, .tableWidth td, .searchBottom th, .header .search td, .btn-select,.DepthPdName a ,.DepthPd p, .list-member button, .drawing button, .sigongHide{
     font-family: 'NanumSquareR', sans-serif;
 }
 .btnWrap button, .snsLogin button, .bannerButton button {

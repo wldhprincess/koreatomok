@@ -9,4 +9,8 @@ $(function(){
         $('.menuLogo').show();
     });
 
+    $('.RequestingShow').click(function(){
+        location.href = 'Requesting.html'
+    })
+
 })

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>견적 요청</title>
+    <title>견적서 요청현황</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/estimate.css">
+    <link rel="stylesheet" href="./css/Requesting.css">
 </head>
 <body>
     <div id="wrap">
@@ -945,110 +945,46 @@
                     <span>
                         <img src="./img/circle.png" alt="circle">
                     </span>
-                    견적 요청서
+                    견적서 요청현황
                 </div>
-                <div class="mainFlex">
-                    <div class="mainL">
-                        <form action="">
-                            <div class="mainLTop">
-                                <div>
-                                    <label for="">담당자명</label>
-                                    <input type="text">
-                                </div>
-                                <div>
-                                    <label for="">담당자 연락처</label>
-                                    <input type="text">
-                                </div>
-                                <div>
-                                    <label for="">회사명</label>
-                                    <input type="text">
-                                </div>
-                                <div>
-                                    <label for="">이메일</label>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="mainLBottom">
-                                <div>
-                                    <label for="">배송요청지역</label>
-                                    <input type="text">
-                                    <button type="button">우편번호</button>
-                                </div>
-                                <div>
-                                    <label for="">상세주소</label>
-                                    <input type="text">
-                                </div>
-                                <div>
-                                    <label for="">배송희망 일시</label>
-                                    <input type="text" class="width70">
-                                    <label class="contents" for="time">
-                                        <label class="labelWidth"><input type="radio" name="time" class="radioCheck">9시 전</label>
-                                        <label class="labelWidth"><input type="radio" name="time" class="radioCheck">오전</label>
-                                        <label class="labelWidth"><input type="radio" name="time" class="radioCheck">당일</label>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label for="">운반비 결재방식</label>
-                                    <label class="contents" for="pay">
-                                        <label class="labelWidth left"><input type="radio" name="pay" checked class="radioCheck radioCheckL">선불</label>
-                                        <label class="labelWidth left"><input type="radio" name="pay" class="radioCheck">착불</label>
-                                    </label>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="mainR">
-                        <form action="">
-                            <table>
-                                <tr>
-                                    <th>품목명</th>
-                                    <th>규격</th>
-                                    <th>단가</th>
-                                    <th>수량</th>
-                                    <th>무게</th>
-                                    <th>금액</th>
-                                </tr>
-                                <tr>
-                                    <td>안전 중하중 그레이팅 맨홀(집수정)용</td>
-                                    <td>400*500*50(7*4)</td>
-                                    <td class="color38">62,700</td>
-                                    <td>15개</td>
-                                    <td class="color38">2,650</td>
-                                    <td>940,500</td>
-                                </tr>
-                                <tr>
-                                    <td>1련 암거</td>
-                                    <td>0.8*0.8*2.0_130T*130T-구</td>
-                                    <td class="color38">695,000</td>
-                                    <td>1본</td>
-                                    <td class="color38">2,640</td>
-                                    <td>17,100</td>
-                                </tr>
-                                <tr>
-                                    <td>측구수로관 AN형(앵글부착) </td>
-                                    <td>200*200*2000*40T</td>
-                                    <td class="color38">60,500</td>
-                                    <td>20본</td>
-                                    <td class="color38">170</td>
-                                    <td>1,210,000</td>
-                                </tr>
-                            </table>
-                            <div class="mainRBtm">
-                                <div>견적가</div>
-                                <div>
-                                    <span>13,500,000</span>
-                                    원
-                                </div>
-                            </div>
-                            <p>
-                                배송비와 부가세가 포함되지 않은 견적가 입니다. <br>
-                                견적요청을 선택해 주시면 당사 담당자가 확인 후 배송비가 포함된 견적금액을 전달하여 드립니다. <br>
-                                견적내용에 대한 문의는 고객센터 031 297 9826로 전화나 이메일 또는 채팅 상담으로 가능합니다.
-                            </p>
-                            <button type="button" class="RequestingShow">견적요청</button>
-                        </form>
-                    </div>
-                </div>
+                <table>
+                    <tr>
+                        <th>요청일</th>
+                        <th>품목명</th>
+                        <th>규격</th>
+                        <th>수량</th>
+                        <th class="marginL177">견적진행현황</th>
+                        <th class="marginL150">관리</th>
+                    </tr>
+                    <tr>
+                        <td>2023.12.31</td>
+                        <td>안전 중하중 그레이팅 맨홀(집수정용) 외 2건</td>
+                        <td>0.8m x 0.8m x 2.0m_130T x 130T-구</td>
+                        <td>20개</td>
+                        <td>
+                            <button type="button" class="marginL">확인대기중</button>
+                        </td>
+                        <td>
+                            <button type="button marginL150">요청취소</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2023.12.30</td>
+                        <td>안전 중하중 그레이팅 맨홀(집수정용) 외 2건</td>
+                        <td>0.8m x 0.8m x 2.0m_130T x 130T-구</td>
+                        <td>15개</td>
+                        <td><button type="button" class="marginL">견적서 작성중</button></td>
+                        <td><button type="button">요청취소</button></td>
+                    </tr>
+                    <tr>
+                        <td>2023.12.29</td>
+                        <td>안전 중하중 그레이팅 맨홀(집수정용) 외 2건</td>
+                        <td>0.8m x 0.8m x 2.0m_130T x 130T-구</td>
+                        <td>1개</td>
+                        <td><button type="button" class="marginL blueBtn">견적서 확인</button></td>
+                        <td><button type="button" class="blackBtn">요청취소</button></td>
+                    </tr>
+                </table>
             </div>
         </main>
         <footer class="footer">
@@ -1187,6 +1123,6 @@
         </footer>
     </div>
     <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script src="./js/estimate.js"></script>
+    <script src="./js/Requesting.js"></script>
 </body>
 </html>

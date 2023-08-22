@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>견적 요청</title>
+    <title>견적요청</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/estimate.css">
+    <link rel="stylesheet" href="./css/check.css">
 </head>
 <body>
     <div id="wrap">
@@ -953,34 +953,32 @@
                             <div class="mainLTop">
                                 <div>
                                     <label for="">담당자명</label>
-                                    <input type="text">
+                                    유재동
                                 </div>
                                 <div>
                                     <label for="">담당자 연락처</label>
-                                    <input type="text">
+                                    010-1234-5678
                                 </div>
                                 <div>
                                     <label for="">회사명</label>
-                                    <input type="text">
+                                    조은건설 주식회사
                                 </div>
                                 <div>
                                     <label for="">이메일</label>
-                                    <input type="text">
                                 </div>
                             </div>
                             <div class="mainLBottom">
                                 <div>
                                     <label for="">배송요청지역</label>
-                                    <input type="text">
-                                    <button type="button">우편번호</button>
+                                    12345 경기도 화성시 봉담읍 조은아파트
                                 </div>
                                 <div>
                                     <label for="">상세주소</label>
-                                    <input type="text">
+                                    관리사무소 1F 111호
                                 </div>
                                 <div>
                                     <label for="">배송희망 일시</label>
-                                    <input type="text" class="width70">
+                                    2023년 12월 31일
                                     <label class="contents" for="time">
                                         <label class="labelWidth"><input type="radio" name="time" class="radioCheck">9시 전</label>
                                         <label class="labelWidth"><input type="radio" name="time" class="radioCheck">오전</label>
@@ -1033,19 +1031,33 @@
                                     <td>1,210,000</td>
                                 </tr>
                             </table>
-                            <div class="mainRBtm">
-                                <div>견적가</div>
+                            <div class="mainRBottom">
                                 <div>
-                                    <span>13,500,000</span>
-                                    원
+                                    <label for="">파레트</label>
+                                    <span>3 개</span>
+                                    <span>33,000원</span>
+                                </div>
+                                <div>
+                                    <label for="">차량정보</label>
+                                    <span>2.5 톤</span>
+                                    <span>2대</span>
+                                </div>
+                                <div>
+                                    <label for="">운반비용</label>
+                                    <span>730,000원</span>
+                                </div>
+                                <div>
+                                    <label for="">합계</label>
+                                    <div class="price">13,500,000 <span>(부가세별도)</span></div>
                                 </div>
                             </div>
-                            <p>
-                                배송비와 부가세가 포함되지 않은 견적가 입니다. <br>
-                                견적요청을 선택해 주시면 당사 담당자가 확인 후 배송비가 포함된 견적금액을 전달하여 드립니다. <br>
-                                견적내용에 대한 문의는 고객센터 031 297 9826로 전화나 이메일 또는 채팅 상담으로 가능합니다.
-                            </p>
-                            <button type="button" class="RequestingShow">견적요청</button>
+                            <div class="flexBtn">
+                                <p>견적내용에 대한 문의는 고객센터 031 297 9826로 전화나 이메일 또는 채팅 상담으로 가능합니다.</p>
+                                <div class="twoBtutton">
+                                    <button type="button">인쇄</button>
+                                    <button type="button" class="blueBtn">발주요청</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -1187,6 +1199,6 @@
         </footer>
     </div>
     <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script src="./js/estimate.js"></script>
+    <script src="./js/check.js"></script>
 </body>
 </html>

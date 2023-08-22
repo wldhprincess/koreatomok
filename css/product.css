@@ -5,14 +5,14 @@
 @import url(./layout.css);
 @import url(./all.css);
 
-.classifyL,.selectBoxItem .bestProduct table tr,.selectBoxItem .bestProduct .W150  button, .classifyRName h1, .classifyRName h2,.selectBoxItem .bestProductName, .selectItem li a, .productName, .selectBoxItem .borderBottom input{
+.selectBoxItem .bestProduct input,.selectBoxItem .bestProduct .W150  button, .productName, .selectBoxItem .borderBottom input, .selectBoxItem .bestProduct table .W710 span, .W100 button, .selectBoxItem .bestProduct .W150 button{
     font-family: 'NanumSquareR', sans-serif;
 }
 
-.tabMenu p{
+.tabMenu p, .classifyMC > li > .selected, .classifyA > li > .select, .selectItem .selectColor{
     font-family: 'NanumSquareEB', sans-serif;
 }
-.selectBoxItem .bestProduct input{
+ .classifyRName h1, .classifyRName h2, .selectBoxItem .bestProduct .background tr th, .classifyL, .selectItem li a,.selectBoxItem .bestProduct table td .selectBoxItem , .selectBoxItem .bestProduct table td, .selectBoxItem .bestProduct table th,.selectBoxItem .bestProduct table .height55 td, .selectBoxItem .bestProduct table .height45{
     font-family: 'NanumSquareL', sans-serif;
 }
 
@@ -62,27 +62,30 @@
     left: 160px;
     top: -3px;
     line-height: 20px;
-    height: 100%;
+    height: 260px;
     display: none;
+    overflow-y: scroll;
+    width: 196px;
+}
+.classifyA::-webkit-scrollbar {
+    width: 8px;
+}
+.classifyA::-webkit-scrollbar-thumb {
+    background-color: #004ea2;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.classifyA::-webkit-scrollbar-track {
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
 }
 .classifyA a{
-    /* font-weight: bold; */
-    font-size: 0.813em;
+    font-size: 0.87em;
 }
 .classifyA li{
-    padding-bottom: 5.5px;
-}
-.classifyA.classifyA2{
-    top: -16px;
-}
-.classifyA.classifyA2 li{
-    padding-bottom: 0px;
-}
-.classifyA.classifyA3{
-    top: -7px;
-}
-.classifyA.classifyA3 li{
-    padding-bottom: 0px;
+    line-height: 25px;
 }
 .classifyMC > li > .selected {
     color: #004ea2;
@@ -97,6 +100,17 @@
 }
 
 
+.lineBar{
+    position: relative;
+    width: 3px;
+    height: 256px;
+    top: 32px;
+    background: #00000017;
+    left: 1px;
+}
+
+
+
 
 
 
@@ -106,6 +120,9 @@
     padding: 30px 0;
     position: relative;
 }
+.classifyRBox{
+    display: none;
+}
 .classifyRWrap{
     display: flex;
     position: absolute;
@@ -114,20 +131,22 @@
     display: flex;
 }
 .classifyselect{
-width: 272px;
+width: 270px;
 }
 .classifyRName{
-    border-left: 3px solid #004ea2;
-    padding-left: 25px;
+    padding-left: 28px;
 }
 .classifyRName h1{
     font-size: 2.250em;
-    letter-spacing: -1px;
+    letter-spacing: -1.94px;
     padding-bottom: 15px;
+    font-weight: normal;
 }
 .classifyRName h2{
     font-size: 0.938em;
-    letter-spacing: -1px;
+    letter-spacing: -.83px;
+    font-weight: normal;
+    padding-left: 4px
 }
 .underbar{
     margin-top: 65px;
@@ -187,6 +206,8 @@ width: 272px;
     text-align: center;
     color: #797979;
     margin-top: 10px;
+    line-height: 1.31;
+    font-weight: normal;
 }
 .productsBtm{
     display: flex;
@@ -272,6 +293,7 @@ width: 272px;
 .selectBoxItem .bestProductName{
     padding-bottom: 21px;
     letter-spacing: -1px;
+    font-weight: bold;
 }
 .selectBoxItem .bestProduct{
     width: 100%;
@@ -282,6 +304,7 @@ width: 272px;
 }
 .selectBoxItem .bestProduct table span{
     color: #797979;
+    font-size: 0.86em;
 }
 .selectBoxItem .bestProduct table tr{
     height: 60px;
@@ -290,17 +313,31 @@ width: 272px;
 }
 .selectBoxItem .bestProduct table th{
     vertical-align: middle;
-    line-height: 20px;
+    line-height: 18.5px;
 }
 .selectBoxItem .bestProduct table td{
     vertical-align: middle;
     text-align: center;
+    font-size: 0.93em;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+.selectBoxItem .bestProduct table td.fontW{
+    letter-spacing: -.72px;
 }
 .colorGrayClick{
     display: none;
 }
 .W100{
     width: 100px;
+}
+.W100 button{
+    width: 71px;
+    height: 30px;
+    border: 0;
+    background: #004ea2;
+    color: #fff;
+    font-size: 0.950em;
 }
 .W236{
     width: 236px;
@@ -320,17 +357,18 @@ width: 272px;
 .W180{
     width: 180px;
 }
-.W710{
+.selectBoxItem .bestProduct table td.W710{
     width: 710px;
     text-align: left;
     padding-left: 20px;
     line-height: 25px;
+    font-size: 14px;
 }
 .selectBoxItem .bestProduct table .W710 span{
     display: block;
     color: #000;
-    padding-top: 8px;
     font-weight: normal;
+    font-size: 13px;
 }
 .W710 span::before{
     color: #000;
@@ -356,13 +394,15 @@ width: 272px;
     border: 0;
     padding: 0;
 }
-.selectBoxItem .bestProduct .W150  button{
+.selectBoxItem .bestProduct .W150 button{
     background: #000;
-    font-size: 0.688em;
+    font-size: 11px;
+    color: #fff;
 }
 .selectBoxItem .bestProduct table .height45{
     height: 45px;
     background: #f2f2f2;
+    font-size: 0.93em;
 }
 .height45 .W180,.height45 .W150, .height45 .W100,
 .height55 .W180,.height55 .W150, .height55 .W100{
@@ -380,12 +420,12 @@ width: 272px;
 }
 .selectBoxItem .bestProduct input{
     width: 72px;
-    height: 33px;
+    height: 30px;
     border: 0;
     border-radius: 0;
     background: #f0f0f0;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
 }
 .selectBoxItem .bestProduct input:focus{
     outline: 1px solid #000;
@@ -412,10 +452,10 @@ width: 272px;
     bottom: 10px;
     right: 0;
 }
-.selectBoxItem .bestProduct th button.colorGray{
+.selectBoxItem .bestProduct td button.colorGray{
     background: #898989;
 }
-.selectBoxItem .bestProduct th button.colorGrayChange{
+.selectBoxItem .bestProduct td button.colorGrayChange{
     background: #000;
 }
 .selectBoxItem .borderBottom > label input{
