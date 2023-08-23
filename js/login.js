@@ -59,4 +59,12 @@ $(function(){
             }
         }, 1000); // 1초마다 실행
     });
+
+
+    $('.kakao, .naver, .google, .submit').click(function(){
+        location.href = 'loginMain.html'
+    })
+    $('.easySignUp').click(function(){
+        location.href = 'join.html';
+    })
 })

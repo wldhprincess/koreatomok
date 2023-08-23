@@ -16,7 +16,7 @@
 .viewDetailsRMiddle strong, .percent strong, .viewDetailsbottomLTop strong,.Additional, .AdditionalProduct strong,  .red, .estimateTit span{
   font-family: 'NanumSquareEB', sans-serif;
 }
-.viewDetailsRMiddleR, .Additional, .AdditionalProduct strong,.percent span,.totalR, .DetailSigongBtn button:hover, .estimateTit p:first-child{
+.viewDetailsRMiddleR, .Additional, .AdditionalProduct strong,.percent span,.totalR, .DetailSigongBtn button:hover, .estimateTit p:first-child, .minitxt{
   font-family: 'NanumSquareB', sans-serif;
 }
 .selectBoxItem .bestProduct input {
@@ -262,6 +262,7 @@ color: #22a21b;
   letter-spacing: -.6px;
   padding-right: 5px;
   font-weight: normal;
+  cursor: pointer;
 }
 .AdditionalProduct span{
   font-weight: bold;
@@ -277,6 +278,41 @@ color: #22a21b;
 }
 .AdditionalProduct input:focus{
   outline: 1px solid;
+}
+.minitxtWrap{
+  width: 286px;
+  height: 103px;
+  position: absolute;
+  background: #fff;
+  border: solid 2px #868686;
+  border-radius: 5px;
+  display: flex;
+  padding :17px;
+  gap: 10px;
+  top: 75px;
+  left: 56px;
+}
+.miniphoto{
+  width: 80px;
+  height: 80px;
+  background: url(../img/mini.png) no-repeat center;
+  position: relative;
+  top: -8px;
+}
+.minitxt{
+  width: 158px;
+  cursor: pointer;
+}
+.minitxt p{
+  font-size: 0.813em;
+  letter-spacing: -0.72px;
+  line-height: 1.46;
+  color: #9a9a9a;
+}
+.minitit{
+  font-size: 0.938em;
+  padding-bottom: 13px;
+  letter-spacing: -0.83px;
 }
 .paddingR{
   letter-spacing: -.3px;  
