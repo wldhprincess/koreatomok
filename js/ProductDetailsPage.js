@@ -54,4 +54,14 @@ $(function(){
     }).mouseout(function(){
         $('.minitxtWrap').hide();
     })
+
+
+
+    $('.viewDetailsImgBox1').addClass('viewDetailsImgBoxBorder');
+    $('.viewDetailsImgBox').click(function(){
+      $(this).toggleClass('viewDetailsImgBoxBorder');
+      $('.viewDetailsImgBox').not(this).removeClass('viewDetailsImgBoxBorder');
+      $('.viewDetailsL .mainPhoto').css({"background":"url(../img/productDetails3.png) no-repeat center", "background-size": "cover"}); 
+      
+    })
 })

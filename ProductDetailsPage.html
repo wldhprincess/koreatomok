@@ -2575,11 +2575,11 @@
                                                 <td colspan="2" class="paddingT">
                                                     <p class="inline">하차지</p>
                                                     <label for="">
-                                                        <input type="text" id="address">
-                                                        <button type="button">주소찾기</button>
+                                                        <input type="text" id="address" >
+                                                        <button type="button" id="address_kakao">주소찾기</button>
                                                         <button type="button" class="expense">예상운임비</button>
                                                         <p class="inlineBlock"><span>570,000</span> 원</p>
-                                                        <input type="text" class="marginL" id="address2">
+                                                        <input type="text" class="marginL" id="address2" name="address_detail">
                                                     </label>
                                                     <p class="lineHeight">주소를 입력하시면 예상 운임비를 확인 하실 수 있습니다. <br><span class="red">운임비를 제외한 견적가를 확인</span> 하시려면 <span class="red">견적요청</span>을 한번 더 선택해 주세요</p>
                                                 </td>
@@ -2590,6 +2590,27 @@
                                                     <span>수로관/플륨관 2공장 외 1곳</span>
                                                 </td>
                                             </tr>
+                                            <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+                                            <script>
+                                            window.onload = function(){
+                                                document.getElementById("address_kakao").addEventListener("click", function(){ //주소입력칸을 클릭하면
+                                                    //카카오 지도 발생
+                                                    var width = 500; //팝업의 너비
+                                                    var height = 600; 
+                                                    new daum.Postcode({
+                                                        width: width, //생성자에 크기 값을 명시적으로 지정해야 합니다.
+                                                        height: height,
+                                                        oncomplete: function(data) { //선택시 입력값 세팅
+                                                            document.getElementById("address").value = data.address; // 주소 넣기
+                                                            document.querySelector("input[name=address_detail]").focus(); //상세입력 포커싱
+                                                        }
+                                                    }).open({
+                                                        left: (window.screen.width / 2) - (width / 2),
+                                                        top: (window.screen.height / 2) - (height / 2)
+                                                    });
+                                                });
+                                            }
+                                            </script>
                                         </table>
                                         <div class="total">
                                             <div class="totalL">예상 견적합계</div>

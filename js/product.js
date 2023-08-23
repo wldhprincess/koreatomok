@@ -29,7 +29,7 @@ $(function(){
     });
 
     $('.colorGrayBtn').click(function(){
-      $('.colorGrayClick').toggle();
+      $(this).parents('.toggle').next('.colorGrayClick').toggle();
       $(this).toggleClass('colorGrayChange');
     });
 
@@ -73,9 +73,5 @@ $(function(){
 
 
 
-  $('.viewDetailsImgBox1').addClass('viewDetailsImgBoxBorder');
-  $('.viewDetailsImgBox').click(function(){
-    $(this).toggleClass('viewDetailsImgBoxBorder');
-    $('.viewDetailsImgBox').not(this).removeClass('viewDetailsImgBoxBorder');
-  })
+
 })
