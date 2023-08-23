@@ -10,7 +10,7 @@ $(function(){
     });
 
     $('.RequestingShow').click(function(){
-        location.href = 'Requesting.html'
+        location.href = 'requesting.html'
     })
 
     

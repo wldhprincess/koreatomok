@@ -50,6 +50,7 @@ $(function(){
     $('.minitxtWrap').hide();
     $('.AdditionalProduct strong').mouseover(function(){
         $('.minitxtWrap').show();
+        
     }).mouseout(function(){
         $('.minitxtWrap').hide();
     })
