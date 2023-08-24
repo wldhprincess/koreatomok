@@ -256,10 +256,12 @@
 .DepthPdimg{
     width: 100%;
     height: 218px;
+    text-align: center;
 }
 .DepthPdimg img{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+    margin: 24px;
 }
 .DepthPd p{
     font-size: 0.750em;
