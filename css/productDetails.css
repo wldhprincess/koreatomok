@@ -456,23 +456,23 @@ margin-right: -3px;
 }
 .estimateTitPadding input{
   width: 163px;
-  height: 31px;
-  /* height: 27px; */
+  height: 35px;
   border: 1px solid #b4b4b4;
-  /* border: 3px solid #cc1414; */
   margin-right: 4px;
-  font-size: 0.813em;
+  font-size: 13px;
+  padding-left: 12px;
+  box-sizing: border-box;
 }
 .estimateTitPadding input:focus{
   outline: none;
 }
 .estimateTitPadding input.inputBox{
-  width: 159px;
-  height: 27px;
+  width: 163px;
+  height: 35px;
   border: 3px solid #cc1414;
 }
 .estimateTitPadding input.marginL.inputBoxMarginL{
-  width: 257px;
+  width: 260px;
 }
 .estimateTitPadding button{
   width: 90px;
@@ -480,7 +480,7 @@ margin-right: -3px;
   border: none;
   padding: 0;
   position: relative;
-  top: 1px;
+  top: 0px;
   margin-right: 2px;
   background: #000;
   color: #fff;
@@ -547,7 +547,7 @@ margin-right: -3px;
 }
 .totalR span{
   color: #000;
-  font-size: 0.688em;
+  font-size: 11px;
 }
 .totalBtn{
   display: flex;
