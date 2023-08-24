@@ -309,6 +309,11 @@ main{
     width: 325px;
     height: 270px;
     padding: 36px 0 0;
+    text-align: center;
+}
+.imgBox img{
+    width: auto;
+    height: 100%;
 }
 .tableWidth{
     width: 325px;

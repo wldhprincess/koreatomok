@@ -64,7 +64,8 @@
 .mainPhoto{
   width: 100%;
   height: 100%;
-  background: url(../img/productDetails.png) no-repeat center;
+  background: url(../img/product1.png) no-repeat center;
+  background-size: contain;
 }
 .viewDetailsR{
   width: 900px;
@@ -240,8 +241,8 @@ color: #22a21b;
   background-size: cover;
 }
 .viewDetailsImgBox1{
-  background: url(../img/productDetails4.png) no-repeat;
-  background-size: cover;
+  background: url(../img/product1.png) no-repeat;
+  background-size: contain;
 }
 
 .viewDetailsbottomR{
@@ -645,14 +646,18 @@ margin-right: -3px;
   background: url(../img/sigong4.jpg) no-repeat;
   background-size: cover;
 }
-
+.buyImg{
+  width: auto;
+  height: 100%;
+}
 .selectBoxItem .bestProduct .buyImg.buyImg1{
-  background: url(../img/product16.png) no-repeat center;
-  background-size: auto;
+  background: url(../img/img16.png) no-repeat center;
+  background-size: 60px;
+  /* background-size: contain; */
 }
 .selectBoxItem .bestProduct .buyImg.buyImg2{
   background: url(../img/product17.png) no-repeat center;
-  background-size: auto;
+  background-size: 60px;
 }
 
 

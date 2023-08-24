@@ -91,6 +91,7 @@
     width: 100%;
     height: 100%;
     background: url(../img/img24.png) no-repeat center; 
+    background-size: 60px;
 }
 .W100{
     width: 100px;
