@@ -631,19 +631,19 @@ margin-right: -3px;
   width: 1065px;
 }
 .SigongPhoto1{
-  background: url(../img/sigong1.jpg) no-repeat;
+  background: url(../img/sigong1.jpg) no-repeat center;
   background-size: cover;
 }
 .SigongPhoto2{
-  background: url(../img/sigong2.jpg) no-repeat;
+  background: url(../img/sigong2.jpg) no-repeat center;
   background-size: cover;
 }
 .SigongPhoto3{
-  background: url(../img/sigong3.jpg) no-repeat;
+  background: url(../img/sigong3.jpg) no-repeat center;
   background-size: cover;
 }
 .SigongPhoto4{
-  background: url(../img/sigong4.jpg) no-repeat;
+  background: url(../img/sigong4.jpg) no-repeat center;
   background-size: cover;
 }
 .buyImg{

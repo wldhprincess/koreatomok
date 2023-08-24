@@ -1,8 +1,10 @@
 $(function(){
     $('.margin').click(function(){
-        location.href = 'productDetailsPage.html';
-    })
-    $('.btnClick').click(function(){
-        location.href = 'productDetailsPage.html';
+        if($('.login #logout').attr('id') == "logout"){
+            location.href = 'productDetailsPageLog.html';
+        } else if($('.login #logout').attr('id') !== ""){
+            location.href = 'productDetailsPage.html';
+        }
+
     })
 })

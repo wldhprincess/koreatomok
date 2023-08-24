@@ -15,13 +15,17 @@ $(function(){
         $('.estimate').css("height", ('885px'));
         $('.estimateTitPadding input').addClass('inputBox');
         $('.estimateTitPadding input').addClass('inputBoxMarginL');
-        return false;
+            return false;
         } 
         if($('#address2').val() == ''){
             alert('상세주소를 입력해주세요');
-        return false;
+            return false;
         } 
-        if($('#address, #address2').val() !== ''){
+        
+        if ($('.login a').attr('id') == "login") {
+            alert('로그인을 해주세요.');
+            return false;
+        }else if($('.login a').attr('id') !== "login"){
             location.href = 'estimate.html'
         }
     })
@@ -79,4 +83,31 @@ $(function(){
         $(this).toggleClass(('blackBtn'));
         $('.DetailSigongBtn button').not(this).removeClass('blackBtn')
     })
+
+
+
+    $(".SigongPhoto").click(function() {
+        var smallimg_url = $(this).css('background-image').replace(/^url\(['"](.+)['"]\)/, '$1');
+        var bigimg_url = $('.DetailSigongPhotoR').css('background-image').replace(/^url\(['"](.+)['"]\)/, '$1');
+    
+        if (smallimg_url !== bigimg_url) {
+            $('.DetailSigongPhotoR').css({
+                "background": "url(" + smallimg_url + ") no-repeat center",
+                "background-size": "cover"
+            });
+    
+            if (smallimg_url !== "none") {
+                $(this).css({
+                    "background": "url(" + bigimg_url + ") no-repeat center",
+                    "background-size": "cover"
+                });
+            } else {
+                alert("선택한 사진에는 배경 이미지가 없습니다.");
+                $('.DetailSigongPhotoR').css({
+                    "background": "url(" + bigimg_url + ") no-repeat center ",
+                    "background-size": "cover"
+                });
+            }
+        }
+    });
 });
