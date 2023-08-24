@@ -61,7 +61,22 @@ $(function(){
     $('.viewDetailsImgBox').click(function(){
       $(this).toggleClass('viewDetailsImgBoxBorder');
       $('.viewDetailsImgBox').not(this).removeClass('viewDetailsImgBoxBorder');
-      $('.viewDetailsL .mainPhoto').css({"background":"url(../img/productDetails3.png) no-repeat center", "background-size": "cover"}); 
+
+
+      var img_url = $(this).css('background-image').replace(/^url\(['"](.+)['"]\)/, '$1');
+      var img_urls = $('.mainPhoto').css('background-image').replace(/^url\(['"](.+)['"]\)/, '$1');
       
+      if (img_url !== img_urls) {
+        $('.mainPhoto').css({
+          "background": "url(" + img_url + ") no-repeat center",
+          "background-size": "cover"
+        });
+      }
+    });
+
+    $('.blackBtnS').addClass('blackBtn');
+    $('.DetailSigongBtn button').click(function(){
+        $(this).toggleClass(('blackBtn'));
+        $('.DetailSigongBtn button').not(this).removeClass('blackBtn')
     })
-})
+});
