@@ -108,6 +108,9 @@ main{
 .mainLTop input:focus{
     outline: 0;
 }
+.mainLBottom input:focus{
+    outline: 0;
+}
 .mainLTopBottom label{
     display: block;
 }
