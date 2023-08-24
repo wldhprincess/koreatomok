@@ -46,6 +46,8 @@ $(function(){
 
     const classifyLinks = $('.classifyA a');
     const classifyRWraps = $('.classifyRBox');
+    const classifyLinks1 = $('.classifyA2 a');
+    const classifyRWraps1 = $('.classifyRBox1');
 
     function toggleElement(element) {
       element.toggle();
@@ -62,13 +64,16 @@ $(function(){
       
       const classifyA = $(this).closest('.classifyA');
       const linkIndex = classifyA.find('a').index(this);
+      const classifyA1 = $(this).closest('.classifyA');
+      const linkIndex1 = classifyA.find('a').index(this);
 
       classifyRWraps.hide();
 
       if (classifyRWraps.eq(linkIndex)) {
         toggleElement(classifyRWraps.eq(linkIndex));
       }
-  });
+      
+  } );
 
 
 

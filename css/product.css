@@ -479,6 +479,9 @@ width: 270px;
 .selectBoxItem .bestProduct td button.colorGray{
     background: #898989;
 }
+.selectBoxItem .bestProduct td button.colorGray:hover{
+    background: #000;
+}
 .selectBoxItem .bestProduct td button.colorGrayChange{
     background: #000;
 }

@@ -349,9 +349,14 @@ color: #22a21b;
   background: #000;
   color: #fff;
   letter-spacing: -1px;
+  border: 0;
 }
 .twoBtn button.margin{
 margin-right: -3px;
+}
+.twoBtn button:hover{
+  background: #004ea2;
+  border: 0;
 }
 
 
