@@ -18,11 +18,9 @@ $(function(){
   $('.productsBtmHide').hide();
   $('.selectItem > ul > li').mouseover(function() {
     $(this).find('a').addClass('selectColor');
-    /* $(this).find('.secoudDepth').show(); */
      
     // 다른 항목의 'selected' 클래스 제거 및 하위 메뉴 숨기기
     $(this).siblings().find('a').removeClass('selectColor');
-    // $(this).siblings().find('.secoudDepth').hide();/*  */
   });
 
   $('.productPhoto1 ').addClass('productPtClick');
@@ -47,38 +45,38 @@ $(function(){
   
 
   $('.titleClick1').mouseover(function(){
-    classifyRWraps.hide();
+    $('.productBox').hide();
     $('#secoundDepthKing1').css('display','flex');
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
 
   })
   $('.titleClick2').mouseover(function(){
-    classifyRWraps.hide();
+    $('.productBox').hide();
     $('#secoundDepthKing0').css('display','flex');
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
   $('.titleClick3').mouseover(function(){
-    classifyRWraps.hide();
+    $('.productBox').hide();
     $('#secoundDepthKing2').css('display','flex');
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
   $('.titleClick4').mouseover(function(){
-    classifyRWraps.hide();
+    $('.productBox').hide();
     $('#secoundDepthKing3').css('display','flex');
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
   $('.titleClick5').mouseover(function(){
-    classifyRWraps.hide();
+    $('.productBox').hide();
     $('#secoundDepthKing4').css('display','flex');
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
   $('.titleClick6').mouseover(function(){
-    classifyRWraps.hide();
+    $('.productBox').hide();
     $('#secoundDepthKing5').css('display','flex');
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
@@ -98,15 +96,13 @@ $(function(){
 
   $('#initialProductBox').css('display','flex');
 
-  const classifyLinks = $('.secoudDepth a');
-  const classifyRWraps = $('.productBox');
 
 
 
-  classifyLinks.mouseover(function(event) {
+  $('.secoudDepth a').mouseover(function(event) {
     event.preventDefault();
     
-    classifyLinks.not(this).removeClass('select');
+    $('.secoudDepth a').not(this).removeClass('select');
     
     $(this).toggleClass('select');
     
@@ -141,8 +137,8 @@ $(function(){
           console.log("총total " + total);
       } */
 
-    if (classifyRWraps.eq(linkIndex)) {
-      classifyRWraps.eq(linkIndex).css("display","flex");
+    if ($('.productBox').eq(linkIndex)) {
+      $('.productBox').eq(linkIndex).css("display","flex");
     }
     
   });

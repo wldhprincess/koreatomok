@@ -124,15 +124,12 @@
     padding: 30px 0;
     position: relative;
 }
+/* .productBox{
+    display: none;
+} */
 .productBox{
     display: none;
-}
-.classifyRWrap{
-    display: flex;
     position: absolute;
-}
-.classifyRWrapShow{
-    display: flex;
 }
 .classifyselect{
 width: 270px;
