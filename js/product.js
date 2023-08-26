@@ -1,3 +1,4 @@
+
 $(function(){
 
   var oneDepthIndex = 0;
@@ -47,38 +48,38 @@ $(function(){
 
   $('.titleClick1').mouseover(function(){
     classifyRWraps.hide();
-    $('#secoundDepthKing1').show();
+    $('#secoundDepthKing1').css('display','flex');
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
 
   })
   $('.titleClick2').mouseover(function(){
     classifyRWraps.hide();
-    $('#secoundDepthKing0').show();
+    $('#secoundDepthKing0').css('display','flex');
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
   $('.titleClick3').mouseover(function(){
     classifyRWraps.hide();
-    $('#secoundDepthKing2').show();
+    $('#secoundDepthKing2').css('display','flex');
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
   $('.titleClick4').mouseover(function(){
     classifyRWraps.hide();
-    $('#secoundDepthKing3').show();
+    $('#secoundDepthKing3').css('display','flex');
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
   $('.titleClick5').mouseover(function(){
     classifyRWraps.hide();
-    $('#secoundDepthKing4').show();
+    $('#secoundDepthKing4').css('display','flex');
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
   $('.titleClick6').mouseover(function(){
     classifyRWraps.hide();
-    $('#secoundDepthKing5').show();
+    $('#secoundDepthKing5').css('display','flex');
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
@@ -95,14 +96,12 @@ $(function(){
   $('.firstSelect').addClass('select');
   $('.clickColor').addClass('selectColor');
 
-  $('#initialProductBox').show();
+  $('#initialProductBox').css('display','flex');
 
   const classifyLinks = $('.secoudDepth a');
   const classifyRWraps = $('.productBox');
 
-  function toggleElement(element) {
-    element.toggle();
-  }
+
 
   classifyLinks.mouseover(function(event) {
     event.preventDefault();
@@ -114,7 +113,7 @@ $(function(){
     const secoudDepth = $(this).closest('.secoudDepth');
     let linkIndex = secoudDepth.find('a').index(this);
 
-    classifyRWraps.hide();
+     $('.productBox').hide();
 
 
 
@@ -143,7 +142,7 @@ $(function(){
       } */
 
     if (classifyRWraps.eq(linkIndex)) {
-      toggleElement(classifyRWraps.eq(linkIndex));
+      classifyRWraps.eq(linkIndex).css("display","flex");
     }
     
   });
