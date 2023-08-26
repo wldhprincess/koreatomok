@@ -2,7 +2,7 @@ $(function(){
 
   var oneDepthIndex = 0;
 
-  $('.classifyAShow').show().siblings('a').addClass('selected');
+  $('.secoudDepth.selected').show().siblings('a').addClass('selected');
   $('.firstDepth > li').mouseover(function() {
       $(this).find('a').addClass('selected');
       $(this).find('.secoudDepth').show();
@@ -47,38 +47,38 @@ $(function(){
 
   $('.titleClick1').mouseover(function(){
     classifyRWraps.hide();
-    $('.classifyRBoxShow1').show();
+    $('#secoundDepthKing1').show();
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
 
   })
   $('.titleClick2').mouseover(function(){
     classifyRWraps.hide();
-    $('.classifyRBoxShow0').show();
+    $('#secoundDepthKing0').show();
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
   $('.titleClick3').mouseover(function(){
     classifyRWraps.hide();
-    $('.classifyRBoxShow2').show();
+    $('#secoundDepthKing2').show();
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
   $('.titleClick4').mouseover(function(){
     classifyRWraps.hide();
-    $('.classifyRBoxShow3').show();
+    $('#secoundDepthKing3').show();
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
   $('.titleClick5').mouseover(function(){
     classifyRWraps.hide();
-    $('.classifyRBoxShow4').show();
+    $('#secoundDepthKing4').show();
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
   $('.titleClick6').mouseover(function(){
     classifyRWraps.hide();
-    $('.classifyRBoxShow5').show();
+    $('#secoundDepthKing5').show();
     $('.secoudDepth li a').removeClass('select');
     $(this).next().find('li').eq(0).find('a').addClass('select');
   })
@@ -95,10 +95,10 @@ $(function(){
   $('.firstSelect').addClass('select');
   $('.clickColor').addClass('selectColor');
 
-  $('.classifyRBoxShow').show();
+  $('#initialProductBox').show();
 
   const classifyLinks = $('.secoudDepth a');
-  const classifyRWraps = $('.classifyRBox');
+  const classifyRWraps = $('.productBox');
 
   function toggleElement(element) {
     element.toggle();

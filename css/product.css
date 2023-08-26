@@ -9,14 +9,14 @@
     font-family: 'NanumSquareR', sans-serif;
 }
 
-.tabMenu p, .firstDepth > li > .selected, .secoudDepth > li > .select, .selectItem .selectColor{
+.tabMenu p, .firstDepth > li > a.selected, .secoudDepth > li > .select, .selectItem .selectColor{
     font-family: 'NanumSquareEB', sans-serif;
 }
- .classifyRName h1, .classifyRName h2, .selectBoxItem .bestProduct .background tr th, .classifyL, .selectItem li a,.selectBoxItem .bestProduct table td .selectBoxItem , .selectBoxItem .bestProduct table td, .selectBoxItem .bestProduct table th,.selectBoxItem .bestProduct table .height55 td, .selectBoxItem .bestProduct table .height45{
+ .classifyRName h1, .classifyRName h2, .selectBoxItem .bestProduct .background tr th, .productNavigation, .selectItem li a,.selectBoxItem .bestProduct table td .selectBoxItem , .selectBoxItem .bestProduct table td, .selectBoxItem .bestProduct table th,.selectBoxItem .bestProduct table .height55 td, .selectBoxItem .bestProduct table .height45{
     font-family: 'NanumSquareL', sans-serif;
 }
 
-.productNavigation{
+.productNavigationSection{
     width: 100%;
     height: 325px;
     background: #fbfbfb;
@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
 }
-.classifyL{
+.productNavigation{
     width: 350px;
     height: 100%;
     font-weight: bold;
@@ -91,7 +91,7 @@
 .secoudDepth li span{
     letter-spacing: normal;
 }
-.firstDepth > li > .selected {
+.firstDepth > li > a.selected {
     color: #004ea2;
 }
 .secoudDepth > li > .select {
@@ -118,13 +118,13 @@
 
 
 
-.classifyR{
+.selectProductBox{
     width: 1050px;
     height: 100%;
     padding: 30px 0;
     position: relative;
 }
-.classifyRBox{
+.productBox{
     display: none;
 }
 .classifyRWrap{
