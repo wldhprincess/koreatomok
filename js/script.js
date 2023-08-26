@@ -103,43 +103,8 @@ $(function() {
  */
 
         
-    const bannerR = document.querySelector('.BannerR');
-    const bannerL = document.querySelector('.BannerL');
-
-    function showRightTab(){
-        bannerL.style.width = '385px'; 
-        bannerR.style.width = '1126px';
-    }
-
-    function showLeftTab(){
-        bannerL.style.width = '1126px'; 
-        bannerR.style.width = '385px';
-    }
-
-
-    bannerR.addEventListener('mouseover', () => {
-        showRightTab();
-    });
-
-    bannerR.addEventListener('mouseout', () => {
-        if(rightClick == true){
-            showRightTab();
-        }else{
-            showLeftTab();
-        }
-    });
-
-    bannerL.addEventListener("mouseover", () => {
-        showLeftTab();
-        rightClick = false;
-    })
-
-    $('.bannerButton button').click(function(){
-        showRightTab();
-        rightClick = true;     
-    });
-
-    const scrollHeader = document.querySelector('.scrollHeader');
+    
+    /* const scrollHeader = document.querySelector('.scrollHeader');
     const topBtn = document.querySelector('.topBtn');
 
     window.addEventListener('scroll', () => {
@@ -156,7 +121,7 @@ $(function() {
             top: 0,
             behavior: 'smooth'
         });
-    });
+    }); */
 
     $(".list-member button").click(function() {
         var selectedText = $(this).text();
@@ -197,17 +162,108 @@ $(function() {
 
 
 
+    var scrollHeader = $('.scrollHeader');
+    var scrollPosition = scrollHeader.offset().top;
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= scrollPosition) {
+            scrollHeader.addClass('fixed');
+        } else {
+            scrollHeader.removeClass('fixed');
+        }
+    });
+
+
+    var activePositionAb = null;
+
+    $('.nav > .innerWraper > ul > li > a').mouseover(function() {
+
+        var clickedLi = $(this).closest('li'); 
+        var positionAb = $(this).next('.positionAb');
+
+        $('.nav > .innerWraper > ul > li').not(clickedLi).removeClass('navClick');
+        $('.positionAb').hide();
+
+        if (activePositionAb !== positionAb.get(0)) {
+            clickedLi.addClass('navClick');
+            if (positionAb.length > 0) {
+                positionAb.show();
+                activePositionAb = positionAb.get(0);
+            }
+        } else {
+            activePositionAb = null;
+        }
+    });
+
+    var activePositionAbs = null;
+
+    $('.positionAb > li > a').mouseover(function() {
+
+        var clickedLi = $(this).closest('li');
+        var positionAbs = $(this).next('.positionAbs');
+
+        $('.positionAb > li').not(clickedLi).removeClass('navClick');
+        $('.positionAbs').hide();
+
+        if (activePositionAbs !== positionAbs.get(0)) {
+            clickedLi.addClass('navClick');
+            if (positionAbs.length > 0) {
+                positionAbs.show();
+                activePositionAbs = positionAbs.get(0);
+            }
+        } else {
+            activePositionAbs = null;
+        }
+    });
+    $('.positionAbs li a').mouseover(function(){
+    
+        // 이미 'navClick' 클래스가 있는 요소들로부터 해당 클래스 제거
+        $('.positionAbs li.navClick').removeClass('navClick');
+    
+        // 클릭한 링크의 부모 'li' 요소에 'navClick' 클래스 추가
+        $(this).closest('li').addClass('navClick');
+    });
+
+
+    var isNavHovered = false;  // nav 요소 위에 마우스가 있는지 여부를 나타내는 플래그
+
+    // nav 요소에 마우스가 올라갔을 때와 벗어났을 때의 이벤트 처리
+    $('.nav').mouseover(function() {
+        isNavHovered = true;
+        $('.nav').show();
+    }).mouseleave(function() {
+        isNavHovered = false;
+        $('.nav').hide();
+    });
+
+    $('.scrollNav ul').mouseover(function() {
+        $('.nav').show();
+    })
+    // .scrollNav ul a 요소에 마우스가 올라갔을 때의 이벤트 처리
+    $('.scrollNav ul a').mouseover(function() {
+        $('.scrollNav ul a').removeClass('scrollHeaderA');
+        $(this).addClass('scrollHeaderA');
+        $('.nav').show();
+    });
+
+    // .scrollNav ul a 요소에서 마우스가 벗어났을 때의 이벤트 처리
+    $('.scrollNav ul a').mouseleave(function() {
+        if (!isNavHovered) {
+            $('.nav').hide();
+        }
+    });
+
 
 // *********************** 도면보기 click *********************** //
     $('.drawingShow').click(function() {
         var $closestBestPrdWidth = $(this).closest('.bestPrdWidth');
-        // Check if .drawing is currently visible within the same .bestPrdWidth
+        
         var isDrawingVisible = $closestBestPrdWidth.find('.drawing:visible').length > 0;
         
-        // Hide all visible .drawing elements
+      
         $('.drawing:visible').hide();
         
-        // If the clicked .drawingShow is within the same .bestPrdWidth and .drawing was visible, don't show it again
+        
         if (!isDrawingVisible || !$closestBestPrdWidth.is('.drawingShow')) {
             $closestBestPrdWidth.find('.drawing').show();
         }
@@ -228,13 +284,13 @@ $(function() {
 // *********************** 시공사진보기 click *********************** //
     $('.sigongShow').click(function() {
         var $closestBestPrdWidth = $(this).closest('.bestPrdWidth');
-        // Check if .drawing is currently visible within the same .bestPrdWidth
+        
         var isDrawingVisible = $closestBestPrdWidth.find('.sigong:visible').length > 0;
         
-        // Hide all visible .drawing elements
+        
         $('.sigong:visible').hide();
         
-        // If the clicked .drawingShow is within the same .bestPrdWidth and .drawing was visible, don't show it again
+       
         if (!isDrawingVisible || !$closestBestPrdWidth.is('.sigongShow')) {
             $closestBestPrdWidth.find('.sigong').show();
         }

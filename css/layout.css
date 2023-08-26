@@ -81,33 +81,161 @@
 /* header-scroll */
 .scrollHeader{
     width: 100%;
+    background: #fff;
+    height: 80px;
+    z-index: 999;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+.scrollHeader.fixed {
     position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 0; /* 고정된 상태에서는 간격 제거 */
+}
+.twoButton{
+    position: absolute;
+    top: 16px;
+}
+.twoButton button{
+    width: 133px;
+    height: 23px;
+    border: 0;
+    display: block;
+    margin-bottom: 3px;
     background: #004ea2;
-    height: 80px;
-    display: none;
-    z-index: 999;
+    color: #fff;
+    text-align: left;
+    padding-left: 9px;
+    letter-spacing: -0.77px;
+    font-size: 14px;
+}
+.twoButton button:last-child{
+    background: #666;
 }
 .scrollNav{
     width: 100%;
     height: 100%;
     position: relative;
+    border-bottom: 1px solid #c9c9c9;;
 }
-.scrollNav ul{
+.scrollNav > ul{
     display: flex;
     margin: 0 325px;
     height: 100%;
     align-items: center;
     justify-content: space-between;
 }
-.scrollNav ul li{padding: 10px;}
 .scrollNav ul li a{
-    color: #fff;
-    font-size: 1.250em;
+    color: #000;
+    font-size: 1.313em;
+    letter-spacing: -1.16px;
+    padding:  30px 0px;
 }
+
 .scrollNav ul li:hover a{
-    color: #d8ebff;
+    color: #004ea2;
 }
+.scrollNav ul li:last-child{
+    width: 67px;
+    text-align: right;
+    padding: 0;
+}
+.scrollNav ul li:last-child:hover a{
+    letter-spacing: -2px;
+}
+.scrollNav ul li:last-child a.scrollHeaderA{
+    letter-spacing: -2px;
+}
+.scrollNav ul li a.scrollHeaderA{
+    color: #004ea2;
+}
+
+.nav{
+    background: #000000e0;
+    height: 450px;
+    display: none;
+}
+.innerWraper{
+    width: 750px;
+    position: relative;
+    margin: 0 auto;
+   
+    padding-top: 27px;
+}
+.nav .innerWraper > ul{
+    position: absolute;
+    width: 150px;
+    /* overflow-y: scroll; */
+    height: 400px;
+    display: none;
+}
+/* .nav .innerWraper > ul::-webkit-scrollbar {
+    width: 8px;
+}
+.nav .innerWraper > ul::-webkit-scrollbar-thumb {
+    background-color: #004ea2;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.nav .innerWraper > ul::-webkit-scrollbar-track {
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+} */
+.nav .innerWraper > ul li{
+    border-bottom: 1px solid #666;
+    line-height: 2.4;
+}
+.nav .innerWraper  ul  li{
+    font-size: 14px;
+    line-height: 2.57;
+    letter-spacing: -.77px;
+    padding-left: 15px;
+}
+.nav .innerWraper > ul > li{
+    font-size: 15px;
+    line-height: 2.4;
+    letter-spacing: -.83px;
+}
+.nav a{
+    color: #fff;
+    display: block;
+}
+.navClick{
+    background: #004ea2;
+}
+.positionAb{
+    position: absolute;
+    left: 170px;
+    width: 150px;
+    top: 0;
+    display: none;
+}
+.positionAbs{
+    position: absolute;
+    left: 170px;
+    width: 190px;   
+    top: 0;
+    display: none;
+}
+.navNext{
+    position: relative;
+}
+.navNext::after{
+    content: "";
+    display: inline-block;
+    background: url(../img/depthNext.png) no-repeat;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: 18px;
+    top: 15px;
+}
+
 
 /* topBtn */
 
@@ -126,157 +254,12 @@
 
 
 
-/* top-banner */
-.menu{
-    width: 100%;
-    background-color: #fbfbfb;
-    height: 345px;
-    position: relative;
-}
-.menu .menuLogo{
-    position: relative;
-    display: flex;
-    align-items: end;
-    top: -40px;
-}
-.menu .menuLogo button{
-    background: url(../img/menu.png) no-repeat;
-    width: 30px;
-    height: 20px;
-    border: none;
-    text-indent: -99999px;
-}
-.menu .menuLogo a{
-    font-size: 0.813em;
-    padding-left: 12px;
-    font-weight: bold;
-}
-.menu h1{
-    position: absolute;
-    top: 35%;
-    font-size: 2.250em;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
-    letter-spacing: -1px;
-}
-.menu h1 span{
-    color: #004ea2;
-    font-weight: bold;
-}
-.menu h2{
-    font-size: 1em;
-    color: #898989;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    letter-spacing: -1px;
-}
-
-/*menu-tab*/
-.menutab{
-    position: relative;
-}
-.menuNav{
-    position: absolute;
-    width: 100%;
-    height: 600px;
-    top: 0;
-    background: rgba(0, 0, 0, .9);
-    z-index: 26;
-    display: none;
-}
-.close{
-    display: flex;
-    padding-top: 33px;
-}
-.closeicon{
-    background: url(../img/close.png) no-repeat;
-    width: 21px;
-    height: 21px;
-    text-indent: -9999px;
-}
-.close a{
-    padding-left: 16px;
-    padding-top: 1px;
-}
-.menuNav a{
-    color: #fff;
-}
-.twoDepth{
-    margin-top: 30px;
-}
-.twoDepthFlex{
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    font-weight: bold;
-}
-.twoDepthFlex > li > a{
-    display: block;
-    padding-bottom: 36px;
-    font-size: 1.063em;
-}
-.twoDepthgrid{
-    position: relative;
-}
-.twoDepthgrid li{
-    padding: 6.5px 0;
-}
-.twoDepthgrid li a{
-    font-size: 0.875em;
-}
-.twoDepth a:hover{
-    color: #009cff;
-}
-.DepthPd{
-    width: 236px;
-    height: 373px;
-    position: absolute;
-    background: #fff;
-    border-radius: 10px;
-    top: 0;
-    left: -270px;
-    display: none;
-}
-.twoDepthgrid .DepthPd a{
-   color: #000;
-}
-.twoDepthgrid li:hover .DepthPd{
-    display: block;
-}
-.DepthPdName{
-    margin-top: 23px;
-    text-align: center;
-}
-.DepthPdName a{
-    font-size: 0.938em;
-}
-.DepthPdimg{
-    width: 100%;
-    height: 218px;
-    text-align: center;
-}
-.DepthPdimg img{
-    width: 80%;
-    height: 80%;
-    margin: 24px;
-}
-.DepthPd p{
-    font-size: 0.750em;
-    text-align: center;
-    color: #515151;
-    line-height: 19px;
-}
-
-
-
 
 /* main */
 /* main - bestProduct*/
-main{
+.mainMarginT{
     width: 100%;
+    margin-top: 515px;
 }
 .borderBottom{
     border-bottom: 1px solid #c9c9c9;

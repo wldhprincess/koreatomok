@@ -191,8 +191,8 @@ width: 270px;
 }
 .productsTop{
     display: flex;
-    margin-bottom: 26px;
     gap: 14px;
+    height: 153px;
 }
 .productsGrop{
     width: 85px;
@@ -205,7 +205,6 @@ width: 270px;
 }
 
 .productName{
-    word-break: keep-all;
     font-size: 0.813em;
     text-wrap: balance;
     text-align: center;
@@ -213,8 +212,22 @@ width: 270px;
     line-height: 1.31;
     font-weight: normal;
     letter-spacing: -.72px;
-    width: 72px;
     margin: 10px auto;
+    word-break: keep-all;
+}
+.productsTopF{
+    flex-wrap: wrap;
+}
+.productsBtmF{
+    left: 370px;
+}
+.productsP{
+    padding-left: 30.23px;
+}
+.positionR{
+    position: relative;
+    left: -6px;
+    width: 100px;
 }
 .productsBtm{
     display: flex;

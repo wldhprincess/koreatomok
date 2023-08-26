@@ -212,6 +212,7 @@ color: #22a21b;
   line-height: 21px;
   letter-spacing: -.5px;
   font-weight: normal;
+  padding-top: 35px;
 }
 .viewDetailsImgBoxWrap{
   display: flex;
@@ -325,6 +326,7 @@ color: #22a21b;
 }
 .sum strong{
   font-size: 1em;
+  line-height: 20px;
 }
 .finalPrice{
   display: flex;
