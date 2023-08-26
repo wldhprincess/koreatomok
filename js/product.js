@@ -44,43 +44,20 @@ $(function(){
   })
   
 
-  $('.titleClick1').mouseover(function(){
-    $('.productBox').hide();
-    $('#secoundDepthKing1').css('display','flex');
-    $('.secoudDepth li a').removeClass('select');
-    $(this).next().find('li').eq(0).find('a').addClass('select');
 
-  })
-  $('.titleClick2').mouseover(function(){
-    $('.productBox').hide();
-    $('#secoundDepthKing0').css('display','flex');
-    $('.secoudDepth li a').removeClass('select');
-    $(this).next().find('li').eq(0).find('a').addClass('select');
-  })
-  $('.titleClick3').mouseover(function(){
-    $('.productBox').hide();
-    $('#secoundDepthKing2').css('display','flex');
-    $('.secoudDepth li a').removeClass('select');
-    $(this).next().find('li').eq(0).find('a').addClass('select');
-  })
-  $('.titleClick4').mouseover(function(){
-    $('.productBox').hide();
-    $('#secoundDepthKing3').css('display','flex');
-    $('.secoudDepth li a').removeClass('select');
-    $(this).next().find('li').eq(0).find('a').addClass('select');
-  })
-  $('.titleClick5').mouseover(function(){
-    $('.productBox').hide();
-    $('#secoundDepthKing4').css('display','flex');
-    $('.secoudDepth li a').removeClass('select');
-    $(this).next().find('li').eq(0).find('a').addClass('select');
-  })
-  $('.titleClick6').mouseover(function(){
-    $('.productBox').hide();
-    $('#secoundDepthKing5').css('display','flex');
-    $('.secoudDepth li a').removeClass('select');
-    $(this).next().find('li').eq(0).find('a').addClass('select');
-  })
+
+//********************** 대분류 제목을 hover할 경우 ***********************//
+  for(let i =0; i< 6; i++){
+    $('#titleClick'+ i).mouseover(function(){
+      $('.productBox').hide();
+      $('.secoudDepth li a').removeClass('select');
+      $(this).next().find('li').eq(0).find('a').addClass('select')
+      $('#secoundDepthKing' + i).css('display','flex');
+    })
+  }
+
+  
+ 
 
 
   
